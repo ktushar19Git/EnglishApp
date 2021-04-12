@@ -1,0 +1,154 @@
+.list_div
+{
+    width: 700px;
+    table-layout: fixed;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.un_ordered_list
+{
+    display: block;
+    color: black;
+    margin-left: 25px;
+}
+.un_ordered_list li
+{
+    padding: 1px;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    font-weight: bold;
+    list-style-image:url('../images/righthand.jpg');
+}
+.un_ordered_list li a:hover
+{
+    color: orangered;
+}
+
+
+/*Multiple horizonatl lists*/
+
+.horizontal_list
+{
+    display: inline-flex;
+    list-style-type: none;
+    color: black;
+    font-size: 13px;
+}
+
+.List_item_red
+{
+    margin:10px;
+
+}
+.List_item_red ul
+{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+.List_item_red ul li
+{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid silver 1px;
+    border-left: solid silver 1px;
+    border-right: solid silver 1px;
+}
+.List_item_red ul li:first-child
+{
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.List_item_red ul li:first-child:hover
+{
+    
+    color: white;
+}
+.List_item_red ul li:last-child
+{
+    color: red;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.List_item_green
+{
+    margin:10px;
+
+}
+.List_item_green ul
+{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+.List_item_green ul li
+{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid silver 1px;
+    border-left: solid silver 1px;
+    border-right: solid silver 1px;
+}
+.List_item_green ul li:first-child
+{
+    background-color: green;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.List_item_green ul li:last-child
+{
+    color: green;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.List_item_purple
+{
+    margin:10px;
+
+}
+.List_item_purple ul
+{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+.List_item_purple ul li
+{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid silver 1px;
+    border-left: solid silver 1px;
+    border-right: solid silver 1px;
+}
+.List_item_purple ul li:first-child
+{
+    background-color: purple;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.List_item_purple ul li:last-child
+{
+    color: purple;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+
+
+/*Multiple horizontal lists*/

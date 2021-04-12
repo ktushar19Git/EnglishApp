@@ -1,23 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
+import './CSS/tables.css'
+import './CSS/headings.css'
+import './CSS/list.css'
+import './CSS/Video.css'
+import Navbar from './Components/Navbar';
+import Header from "./Components/Header";
+import Menu from "./Components/Menu";
+import Nouns from "./Components/PartsOfSpeech/Noun/Nouns";
+import ProNouns  from "./Components/PartsOfSpeech/Pronoun/ProNouns";
+import Adjectives  from "./Components/PartsOfSpeech/Adjective/Adjectives";
+import Footer from './Components/Footer';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Verbs from './Components/PartsOfSpeech/Verb/Verbs';
+import Adverbs from './Components/PartsOfSpeech/Adverb/Adverbs';
+import Conjunctions from './Components/PartsOfSpeech/Conjunction/Conjunctions';
+import Prepositions from './Components/PartsOfSpeech/Preposition/Prepositions';
+import Interjections from './Components/PartsOfSpeech/Interjection/Interjections';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        
+        <Switch>
+          <Route path='/' exact component={Nouns} />
+          <Route path="/Nouns" exact component={Nouns} />
+          <Route path="/ProNouns" exact component={ProNouns} />
+          <Route path="/Adjectives" exact component={Adjectives} />
+          <Route path="/Verbs" exact component={Verbs} />
+          <Route path="/Adverbs" exact component={Adverbs} />
+          <Route path="/Conjunctions" exact component={Conjunctions} />
+          <Route path="/Prepositions" exact component={Prepositions} />
+          <Route path="/Interjections" exact component={Interjections} />
+
+        </Switch>
+      </Router>
+          
+          
+          
+
+         
+          
     </div>
   );
 }

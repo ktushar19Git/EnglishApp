@@ -36,3 +36,446 @@
     transform: rotate(360deg);
   }
 }
+.main-div{
+  background-color: white; 
+  border-left: #00fff2 solid 1px;
+  border-bottom: rgb(252, 164, 0)  solid 1px;
+  border-right:  #00fff2  solid 1px;
+  border-top: #00fff2 solid 10px;
+  font-variant-caps: all-petite-caps;
+  font-size: large;
+  font-weight: bold;
+
+}
+.nouns-div{
+  margin-top: 10px;
+  background-color: white;
+  font-family: 'Varela Round';
+  border-left: #1261A0 solid 1px;
+  border-bottom: #1261A0 solid 1px;
+  border-right: #1261A0 solid 1px;
+  border-top: #1261A0 solid 5px;
+}
+.nouns-heading{
+  text-align: left;
+  color: blue;
+  font-size: large; 
+  margin-left: 15px; 
+}
+
+.Headline
+{
+  color: white ; 
+  font-family: sans-serif ;
+  background: linear-gradient(50deg, #6EC1F8 25%, #FF6424 25%);
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+  font-size: large;
+}
+.Menu
+{
+  background: #038eff;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: smaller;
+  font-weight: bolder;
+  font-variant-caps: all-petite-caps;
+
+}
+.Menu ul{
+  display: inline-flex;
+  list-style-type: none;
+  color: black;
+}
+.Menu ul li
+{
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.Menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+.active,.Menu ul li:hover
+{ 
+  background:  #1379cc;
+  border-radius: 3px;
+  color: rgb(247, 165, 12) ;
+
+}
+.SubMenu
+{
+  display: none;
+}
+.Menu ul li:hover .SubMenu
+{
+  display: block;
+  position: absolute;
+  background: #1261A0;
+  margin-top: 10px;
+  margin-left: -10px;
+  text-align: left;
+  
+
+}
+.Menu ul li:hover .SubMenu ul
+{
+  display: block;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: white;
+}
+.Menu ul li:hover .SubMenu ul li
+{
+  padding: 5px;
+  border-bottom: 1px solid orange;
+  background: transparent;
+  text-align: left;
+  border-radius: 0;
+}
+.Menu ul li:hover .SubMenu ul li a
+{
+  color: white;
+}
+.Menu ul li:hover .SubMenu ul li:hover
+{
+  background-color: #1273c2;
+}
+.Menu ul li:hover .SubMenu ul li a:hover
+{
+  color: rgb(247, 165, 12) ;
+}
+.Menu ul li:hover .SubMenu ul li:last-child{
+
+  border-bottom: none;
+}
+.div_header{
+
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 2px solid red;
+  width: 200px;
+  color: #1261A0 ;
+  font-variant-caps: all-petite-caps;
+  font-weight: bold;
+  font-size: 20px;
+}
+.div_header_def{
+
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;
+}
+.wrapper-div{
+  
+  width: 240px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+  color: blue;
+}
+.wrapper-div-div
+{
+  background: white;
+  text-align: left;
+  font-size: medium;
+  font-weight: bold;
+  
+
+}
+.wrapper-div-div ul{
+  display: inline-flex;
+  list-style-type: none;
+  color: white;
+}
+.wrapper-div-div ul li
+{
+  width: 340px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.ForwardArrow
+{
+  vertical-align: middle;
+  color: white;
+}
+.Def_title{
+  color: white ; 
+  background-color: #1261A0;
+  border-top: transparent solid 1px;
+  border-bottom: transparent solid 1px;
+  font-weight: bold;
+  font-variant-caps: all-petite-caps;
+  font-size: large;
+  margin-top: 2px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+ 
+}
+.Def_details{
+  color: rgb(46, 10, 206);  
+  background-color: white;
+  border-top: transparent solid 1px;
+  border-bottom: blue solid 1px;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.Def_details_desc{
+  color: black;  
+  background-color: white;
+  border-top: transparent solid 1px;
+  border-bottom: black solid 1px;
+  font-size: 14px;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.Content_desc{
+  color: black;  
+  background-color: transparent;
+  border-top: transparent solid 1px;
+  border-bottom: transparent solid 1px;
+  font-size: 14px;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+.FullTable{
+  width: 100%;
+}
+.Types-circle-div{
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  padding: 10px;
+  background: gray;
+  border-radius: 100px;
+  text-align: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.Types-div{
+  border-bottom: rgb(4, 113, 255) solid 10px;
+  border-top: rgb(4, 113, 255) solid 2px;
+  border-right: rgb(4, 113, 255) solid 2px;
+  border-left: rgb(4, 113, 255) solid 2px;
+  width: 240px;
+  height: 370px;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+}
+.Types-div-div
+{
+  background: white;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+
+}
+.Types-div-div ul{
+  display: inline-flex;
+  list-style-type: none;
+  color: white;
+}
+.Types-div-div ul li
+{
+  width: 340px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.div_header_types{
+
+  padding: 10px;
+  width: 200px;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  font-weight: normal;
+}
+.types_header{
+
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 2px solid red;
+  width: 240px;
+  color: #1261A0 ;
+  font-variant-caps: all-petite-caps;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Main_div_content
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Highlighters
+{
+  font-weight: bold;
+  color: #1261A0;
+}
+.example_list
+{
+  background: #038eff;
+  text-align: left;
+  font-size: smaller;
+  font-weight: bolder;
+  margin: 10px;
+  padding: 10px;
+
+}
+.example_list ul{
+  display:block;
+  list-style-type: none;
+  color: black;
+}
+.example_list ul li
+{
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+
+}
+.MarginNormal
+{
+  margin: 20px;
+  border-radius: 10px;
+  border:solid rgb(0, 132, 255) 1px;
+  background-color: rgb(226, 239, 255);
+}
+
+.Content_sub_desc{
+  color: black;  
+  background-color: transparent;
+  border-top: transparent solid 1px;
+  font-size: 14px;
+  margin: 10px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 50px;
+  border-bottom: dashed #0f8aee 2px;
+  padding-bottom: 10px;
+
+}
+.Content_table_desc{
+  color: black;  
+  background-color: rgb(226, 239, 255);
+  border-top: transparent solid 1px;
+  border-bottom: transparent solid 1px;
+  font-size: 14px;
+  margin-top: 2px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+.Line_style{
+  color: #0f8aee;
+  margin: 0px;
+}
+.Table_style{
+  width: 700px;
+  table-layout: fixed;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
+.tabledata_style
+{
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(82, 11, 141);
+  color: white;
+  font-weight: bolder;
+}
+.tabledata_style_normal
+{
+  padding: 5px;
+  margin: 5px;
+  background-color:rgb(191, 161, 245);
+}
+.table_header
+{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(82, 11, 141);
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.Proper-types-div{
+  border-bottom: rgb(4, 113, 255) solid 10px;
+  border-top: rgb(4, 113, 255) solid 2px;
+  border-right: rgb(4, 113, 255) solid 2px;
+  border-left: rgb(4, 113, 255) solid 2px;
+  width: 240px;
+  height: 370px;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+  border-radius: 10px;
+}
+.EndofSection
+{
+  border-bottom: silver double 1px;
+}
+.back_stage{
+  background-color: rgb(226, 239, 255);
+  margin: 5px;
+  padding: 10px;
+}
+.Table_2_style{
+  width: 700px;
+  table-layout: fixed;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
+.tabledata_2_style
+{
+  padding: 5px;
+  margin: 5px;
+  background-color: navy;
+  color: white;
+  font-weight: bolder;
+}
+.tabledata_2_style_normal
+{
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(230, 230, 230);
+}
+.table_2_header
+{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+}

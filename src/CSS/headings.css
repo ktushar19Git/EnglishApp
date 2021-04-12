@@ -1,0 +1,33 @@
+.label-sub-heading
+{
+  text-align: left;
+  color: #1261A0 ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 16px;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.label-sub-heading:hover
+{
+    color: orangered;
+}
+.label-heading
+{
+  text-align: left;
+  color: #1261A0 ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+.label-heading:hover
+{
+    color: orangered;
+}
