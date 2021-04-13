@@ -66,17 +66,89 @@
     text-align: center;
     font-weight: bold;
 }
-.List_item_red ul li:first-child:hover
-{
-    
-    color: white;
-}
+
 .List_item_red ul li:last-child
 {
     color: red;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.List_item_red ul li div
+{
+    margin: 3px;
+    padding: 3px;
+}
+.List_item_red ul li:first-child:hover
+{
+    
+    color: white;
+}
+
+
+.List_item_red ul li ul
+{
+    display: block;
+    color: black;
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 0px;
+}
+.List_item_red ul li ul span
+{
+    text-align: left;
+    color:red;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.List_item_red ul li ul li
+{
+    padding: 1px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    font-weight: bold;
+    list-style-image:url('../images/righthand.jpg');
+    border-bottom: solid silver 0px;
+    border-left: solid silver 0px;
+    border-right: solid silver 0px;
+}
+.List_item_red ul li ul li span
+{
+    text-align: left;
+    color:red;
+    font-weight: bold;
+    font-size: 12px;
+}
+.List_item_red ul li ul li:first-child
+{
+    background-color: white;
+    text-align: left;
+}
+.List_item_red ul li ul li:first-child:hover
+{
+    color: black;
+    text-align: left;
+}
+.List_item_red ul li ul li:last-child
+{
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+.List_item_red ul li ul li:last-child div
+{
+    margin: 0px;
+    padding: 0px;
+}
+.List_item_red ul li ul li div
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 .List_item_green
 {
@@ -111,6 +183,79 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.List_item_green ul li div
+{
+    margin: 5px;
+    padding: 5px;
+}
+.List_item_green ul li:first-child:hover
+{
+    
+    color: white;
+}
+.List_item_green ul li ul
+{
+    display: block;
+    color: black;
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 0px;
+}
+.List_item_green ul li ul span
+{
+    text-align: left;
+    color:green;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.List_item_green ul li ul li
+{
+    padding: 1px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    font-weight: bold;
+    list-style-image:url('../images/righthand.jpg');
+    border-bottom: solid silver 0px;
+    border-left: solid silver 0px;
+    border-right: solid silver 0px;
+}
+.List_item_green ul li ul li span
+{
+    text-align: left;
+    color:green;
+    font-weight: bold;
+    font-size: 12px;
+}
+.List_item_green ul li ul li:first-child
+{
+    background-color: white;
+    text-align: left;
+}
+.List_item_green ul li ul li:first-child:hover
+{
+    color: black;
+    text-align: left;
+}
+.List_item_green ul li ul li:last-child
+{
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+.List_item_green ul li ul li:last-child div
+{
+    margin: 0px;
+    padding: 0px;
+}
+.List_item_green ul li ul li div
+{
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .List_item_purple
 {
@@ -145,6 +290,187 @@
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+.List_item_purple ul li div
+{
+    margin: 5px;
+    padding: 5px;
+}
+.List_item_purple ul li:first-child:hover
+{
+    
+    color: white;
+}
+
+.List_item_purple ul li ul
+{
+    display: block;
+    color: black;
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 0px;
+}
+.List_item_purple ul li ul span
+{
+    text-align: left;
+    color:purple;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.List_item_purple ul li ul li
+{
+    padding: 1px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    font-weight: bold;
+    list-style-image:url('../images/righthand.jpg');
+    border-bottom: solid silver 0px;
+    border-left: solid silver 0px;
+    border-right: solid silver 0px;
+}
+.List_item_purple ul li ul li span
+{
+    text-align: left;
+    color:purple;
+    font-weight: bold;
+    font-size: 12px;
+}
+.List_item_purple ul li ul li:first-child
+{
+    background-color: white;
+    text-align: left;
+}
+.List_item_purple ul li ul li:first-child:hover
+{
+    color: black;
+    text-align: left;
+}
+.List_item_purple ul li ul li:last-child
+{
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+.List_item_purple ul li ul li:last-child div
+{
+    margin: 0px;
+    padding: 0px;
+}
+.List_item_purple ul li ul li div
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.List_item_blue
+{
+    margin:10px;
+
+}
+.List_item_blue ul
+{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+.List_item_blue ul li
+{
+    margin: 0px;
+    padding: 10px;
+    border-bottom: solid silver 1px;
+    border-left: solid silver 1px;
+    border-right: solid silver 1px;
+}
+.List_item_blue ul li:first-child
+{
+    background-color: blue;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.List_item_blue ul li:last-child
+{
+    color: blue;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.List_item_blue ul li div
+{
+    margin: 5px;
+    padding: 5px;
+}
+.List_item_blue ul li:first-child:hover
+{
+    
+    color: white;
+}
+.List_item_blue ul li ul
+{
+    display: block;
+    color: black;
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 0px;
+}
+.List_item_blue ul li ul span
+{
+    text-align: left;
+    color:blue;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.List_item_blue ul li ul li
+{
+    padding: 1px;
+    margin-left: 10px;
+    margin-top: 0px;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    font-weight: bold;
+    list-style-image:url('../images/righthand.jpg');
+    border-bottom: solid silver 0px;
+    border-left: solid silver 0px;
+    border-right: solid silver 0px;
+}
+.List_item_blue ul li ul li span
+{
+    text-align: left;
+    color:blue;
+    font-weight: bold;
+    font-size: 12px;
+}
+.List_item_blue ul li ul li:first-child
+{
+    background-color: white;
+    text-align: left;
+}
+.List_item_blue ul li ul li:first-child:hover
+{
+    color: black;
+    text-align: left;
+}
+.List_item_blue ul li ul li:last-child
+{
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+.List_item_blue ul li ul li:last-child div
+{
+    margin: 0px;
+    padding: 0px;
+}
+.List_item_blue ul li ul li div
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 
 
@@ -152,3 +478,22 @@
 
 
 /*Multiple horizontal lists*/
+
+.iconstandard
+{
+    width: 100px;
+    height: 100px;
+}
+.list_div_inner
+{
+    table-layout: fixed;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+
+
+
+

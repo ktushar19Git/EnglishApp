@@ -1,5 +1,6 @@
 import React from 'react'
 import PlaceIcon from '@material-ui/icons/Place';
+import {FcBusinessman, FcBusinesswoman} from 'react-icons/fc';
 
 
 function NounExamples()
@@ -24,10 +25,22 @@ function NounExamples()
                                 Person
                             </li>
                             <li>
-                                Icons
+                                <div>
+                                    A noun that acts as a person is a human being regarded as an individual.
+                                </div>
+                                <div>
+                                    <FcBusinessman class="iconstandard"></FcBusinessman>
+                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                </div>
                             </li>
                             <li>
-                                Examples
+                                
+                                    <ul>
+                                        <span>Examples:</span>
+                                        <li ><span>William</span> is a boy.</li>
+                                        <li ><span>Tanaya</span> is a girl.</li>
+                                    </ul>
+                                
                             </li>
                         </ul>
                     </li>
@@ -38,10 +51,22 @@ function NounExamples()
                                 Place
                             </li>
                             <li>
-                                Icons
+                                <div>
+                                    A noun that acts as a person is a human being regarded as an individual.
+                                </div>
+                                <div>
+                                    <FcBusinessman class="iconstandard"></FcBusinessman>
+                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                </div>
                             </li>
                             <li>
-                                Examples
+                                
+                                    <ul>
+                                        <span>Examples:</span>
+                                        <li ><span>William</span> is a boy.</li>
+                                        <li ><span>Tanaya</span> is a girl.</li>
+                                    </ul>
+                                
                             </li>
                         </ul>
                     </li>
@@ -52,10 +77,48 @@ function NounExamples()
                                 Animal
                             </li>
                             <li>
-                                Icons
+                                <div>
+                                    A noun that acts as a person is a human being regarded as an individual.
+                                </div>
+                                <div>
+                                    <FcBusinessman class="iconstandard"></FcBusinessman>
+                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                </div>
                             </li>
                             <li>
-                                Examples
+                                
+                                    <ul>
+                                        <span>Examples:</span>
+                                        <li ><span>William</span> is a boy.</li>
+                                        <li ><span>Tanaya</span> is a girl.</li>
+                                    </ul>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="List_item_blue">
+                        
+                        <ul>
+                            <li>
+                                Thing
+                            </li>
+                            <li>
+                                <div>
+                                    A noun that acts as a person is a human being regarded as an individual.
+                                </div>
+                                <div>
+                                    <FcBusinessman class="iconstandard"></FcBusinessman>
+                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                </div>
+                            </li>
+                            <li>
+                                
+                                    <ul>
+                                        <span>Examples:</span>
+                                        <li ><span>William</span> is a boy.</li>
+                                        <li ><span>Tanaya</span> is a girl.</li>
+                                    </ul>
+                                
                             </li>
                         </ul>
                     </li>
