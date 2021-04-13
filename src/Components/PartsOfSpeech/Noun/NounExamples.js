@@ -1,6 +1,7 @@
 import React from 'react'
 import PlaceIcon from '@material-ui/icons/Place';
 import {FcBusinessman, FcBusinesswoman} from 'react-icons/fc';
+import {FcOrganization, FcHome} from 'react-icons/fc';
 
 
 function NounExamples()
@@ -55,8 +56,8 @@ function NounExamples()
                                     A noun that acts as a person is a human being regarded as an individual.
                                 </div>
                                 <div>
-                                    <FcBusinessman class="iconstandard"></FcBusinessman>
-                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                    <FcOrganization class="iconstandard"></FcOrganization>
+                                    <FcHome class="iconstandard"></FcHome>
                                 </div>
                             </li>
                             <li>
