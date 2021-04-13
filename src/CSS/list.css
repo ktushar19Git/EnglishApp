@@ -41,13 +41,14 @@
 
 .List_item_red
 {
-    margin:10px;
+    margin:0px;
+    width: 320px;
 
 }
 .List_item_red ul
 {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding:5px;
     list-style-type: none;
 }
 .List_item_red ul li
@@ -152,13 +153,15 @@
 
 .List_item_green
 {
-    margin:10px;
+    margin:0px;
+    width: 320px;
+
 
 }
 .List_item_green ul
 {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px;
     list-style-type: none;
 }
 .List_item_green ul li
@@ -185,8 +188,8 @@
 }
 .List_item_green ul li div
 {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
 }
 .List_item_green ul li:first-child:hover
 {
@@ -259,13 +262,15 @@
 
 .List_item_purple
 {
-    margin:10px;
+    margin:0px;
+    width: 320px;
+
 
 }
 .List_item_purple ul
 {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px;
     list-style-type: none;
 }
 .List_item_purple ul li
@@ -292,8 +297,8 @@
 }
 .List_item_purple ul li div
 {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
 }
 .List_item_purple ul li:first-child:hover
 {
@@ -366,13 +371,15 @@
 
 .List_item_blue
 {
-    margin:10px;
+    margin:0px;
+    width: 320px;
+
 
 }
 .List_item_blue ul
 {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px;
     list-style-type: none;
 }
 .List_item_blue ul li
@@ -399,8 +406,8 @@
 }
 .List_item_blue ul li div
 {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
 }
 .List_item_blue ul li:first-child:hover
 {

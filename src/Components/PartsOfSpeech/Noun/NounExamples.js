@@ -54,7 +54,7 @@ function NounExamples()
                             </li>
                             <li>
                                 <div>
-                                    A noun that acts as a person is a human being regarded as an individual.
+                                    A noun that acts as a place is a location, point or area and tells the setting.
                                 </div>
                                 <div>
                                     <FcGlobe class="iconstandard"></FcGlobe>
@@ -81,7 +81,7 @@ function NounExamples()
                             </li>
                             <li>
                                 <div>
-                                    A noun that acts as a person is a human being regarded as an individual.
+                                    A noun that acts as an animal is a creature, similiar to a human but has a different life.
                                 </div>
                                 <div>
                                     <FaCat class="iconstandard color_purple"></FaCat>
@@ -107,7 +107,7 @@ function NounExamples()
                             </li>
                             <li>
                                 <div>
-                                    A noun that acts as a person is a human being regarded as an individual.
+                                    A noun that acts as a thing is an object that is not living.
                                 </div>
                                 <div>
                                     <FcPlanner class="iconstandard"></FcPlanner>
