@@ -1,8 +1,9 @@
 import React from 'react'
 import PlaceIcon from '@material-ui/icons/Place';
-import {FcBusinessman, FcBusinesswoman} from 'react-icons/fc';
-import {FcOrganization, FcHome} from 'react-icons/fc';
-
+import {FcBusinessman, FcBusinesswoman, FcCloseUpMode} from 'react-icons/fc';
+import {FcOrganization, FcGlobe, FcPlanner} from 'react-icons/fc';
+import {FaCat} from 'react-icons/fa';
+import {GiElephant} from 'react-icons/gi';
 
 function NounExamples()
 
@@ -38,8 +39,8 @@ function NounExamples()
                                 
                                     <ul>
                                         <span>Examples:</span>
-                                        <li ><span>William</span> is a boy.</li>
-                                        <li ><span>Tanaya</span> is a girl.</li>
+                                        <li ><span>Josh</span> loves being a <span>pilot</span>.</li>
+                                        <li ><span>Sarah</span> is an <span>engineer</span>.</li>
                                     </ul>
                                 
                             </li>
@@ -56,16 +57,17 @@ function NounExamples()
                                     A noun that acts as a person is a human being regarded as an individual.
                                 </div>
                                 <div>
+                                    <FcGlobe class="iconstandard"></FcGlobe>
                                     <FcOrganization class="iconstandard"></FcOrganization>
-                                    <FcHome class="iconstandard"></FcHome>
+                                    
                                 </div>
                             </li>
                             <li>
                                 
                                     <ul>
                                         <span>Examples:</span>
-                                        <li ><span>William</span> is a boy.</li>
-                                        <li ><span>Tanaya</span> is a girl.</li>
+                                        <li > A <span>globe</span> is a model of the <span>earth</span>.</li>
+                                        <li> My <span>company</span> has rented an <span>office</span>.</li>
                                     </ul>
                                 
                             </li>
@@ -82,16 +84,16 @@ function NounExamples()
                                     A noun that acts as a person is a human being regarded as an individual.
                                 </div>
                                 <div>
-                                    <FcBusinessman class="iconstandard"></FcBusinessman>
-                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                    <FaCat class="iconstandard color_purple"></FaCat>
+                                    <GiElephant class="iconstandard color_grey" ></GiElephant>
                                 </div>
                             </li>
                             <li>
                                 
                                     <ul>
                                         <span>Examples:</span>
-                                        <li ><span>William</span> is a boy.</li>
-                                        <li ><span>Tanaya</span> is a girl.</li>
+                                        <li > <span>Cat</span> and <span>mouse</span> are enemies.</li>
+                                        <li ><span>Elephant</span> is an incredible <span>animal</span>.</li>
                                     </ul>
                                 
                             </li>
@@ -108,16 +110,16 @@ function NounExamples()
                                     A noun that acts as a person is a human being regarded as an individual.
                                 </div>
                                 <div>
-                                    <FcBusinessman class="iconstandard"></FcBusinessman>
-                                    <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
+                                    <FcPlanner class="iconstandard"></FcPlanner>
+                                    <FcCloseUpMode class="iconstandard"></FcCloseUpMode>
                                 </div>
                             </li>
                             <li>
                                 
                                     <ul>
                                         <span>Examples:</span>
-                                        <li ><span>William</span> is a boy.</li>
-                                        <li ><span>Tanaya</span> is a girl.</li>
+                                        <li > A <span>calendar</span> is very useful.</li>
+                                        <li > There are many <span>flowers</span> in the garden.</li>
                                     </ul>
                                 
                             </li>

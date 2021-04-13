@@ -492,7 +492,14 @@
     padding: 0px;
     font-size: 12px;
 }
-
+.color_purple
+{
+    color: purple;
+}
+.color_grey
+{
+    color: darkgrey;
+}
 
 
 
