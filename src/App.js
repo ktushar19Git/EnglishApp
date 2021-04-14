@@ -4,6 +4,8 @@ import './CSS/tables.css'
 import './CSS/headings.css'
 import './CSS/list.css'
 import './CSS/Video.css'
+import './CSS/divs.css'
+import './CSS/colors.css'
 import Navbar from './Components/Navbar';
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";

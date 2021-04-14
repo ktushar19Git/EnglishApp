@@ -17,139 +17,77 @@ function NounTypes() {
                 Nouns are classified into multiple types based on their uses. Following are some types of nouns
             </div>
 
-            <div class="Types-div-div">
+            <div class="div_sub_section">
+                <div class="label-sub-heading">
+                    Types of Nouns
+                </div>
                 
-                <ul>
-                    <li>
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        
-                            <div class='div_header'>Proper Nouns</div>
+            <div class="list_div">
+                <p>As you can see, Below are the types of Nouns based on their uses"</p>
+                    <ul class="un_ordered_list">
+                        <li>
+                            <a href="#AttrAdj">Proper Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#PrdAdj">Common Nouns/Concrete Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#CompAdj">Abstaract Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#AttrAdj">Collective Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#CompNoun">Compound Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#AttrAdj">Proper Nouns</a>
+                        </li>
+                    </ul>
 
-                            <div class='div_header_types'>
-                                Proper Nouns are the names of <span class="Highlighters">people, places or things</span>.<br></br><br></br>They always start with a capital letter.
+                    <div class= "div_sub_section_item">
+                        <div class="label-sub-heading-item color-maroon">Proper Nouns</div>
+                        <div class="internal_text">
+                            <b>Proper Nouns</b> are specific names for paticular people, places and some things. They always start with a capital letter.
+                        </div>               
+                    </div> 
 
-                            </div>
+                    <div class= "div_sub_section_item">
+                        <div class="label-sub-heading-item color-blue">Common Nouns/Concrete Nouns</div>
+                        <div class="internal_text">
+                            Proper Nouns are specific names for paticular people, places and some things. They always start with a capital letter.
+                        </div>               
+                    </div> 
+                    <div class= "div_sub_section_item">
+                        <div class="label-sub-heading-item color-green">Abstaract Nouns</div>
+                        <div class="internal_text">
+                            Proper Nouns are specific names for paticular people, places and some things. They always start with a capital letter.
+                        </div>               
+                    </div> 
+                    <div id="CompNoun" class= "div_sub_section_item">
+                        <div class="label-sub-heading-item color-green">Collective Nouns</div>
+                        <div class="internal_text">
+                            Proper Nouns are specific names for paticular people, places and some things. They always start with a capital letter.
+                        </div>               
+                    </div> 
+                    <div class= "div_sub_section_item">
+                        <div class="label-sub-heading-item color-green">Compound Nouns</div>
+                        <div class="internal_text">
+                            Proper Nouns are specific names for paticular people, places and some things. They always start with a capital letter.
+                        </div>               
+                    </div> 
 
-                            <div class='div_header_types'>
-                                icons
-                                
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        <div class='div_header'>Common Nouns</div>
-
-                        <div class='div_header_types'>
-                            Common nouns are names for <span class="Highlighters">people</span> or <span class="Highlighters">things</span> in <span class="Highlighters">general</span>.
-                                <div>
-                                    They never start with a capital letter.
-                                </div>                           
-                        </div>
-
-                        <div class='div_header_types'>
-                            icons
+            
             </div>
-                    </div></li>
+            </div> 
 
-                    
-                    <li>
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        
-                            <div class='div_header'>Abstract Nouns</div>
-
-                            <div class='div_header_types'>
-                                Abstract Nouns are the names of things that you <span class="Highlighters">can't see</span>, <span class="Highlighters">hear</span>, <span class="Highlighters">touch</span> or <span class="Highlighters">smell</span>, like <span class="Highlighters">emotions</span> or <span class="Highlighters">ideas</span>.
-                            </div>
-
-                            <div class='div_header_types'>
-                                icons
-                            </div>
-                        </div>
-                    
-                    </li>
-
-                    
-
-
-
-                </ul>
-            </div>
-
-            <div class="Types-div-div">
+            
+            
                 
-                <ul>
-                    <li>
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        
-                            <div class='div_header'>Possesive Nouns</div>
-
-                            <div class='div_header_types'>
-                                Possesive Nouns are nouns that show posession. <br></br><br></br> Possesive nouns are used to show ownership and they are usually used with an apostrophe and +s.
-                            </div>
-
-                            <div class='div_header_types'>
-                                icons
-                            </div>
-                        </div>
-                    
-                    </li>
-                    <li>
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        
-                            <div class='div_header'>Collective Nouns</div>
-
-                            <div class='div_header_types'>
-                                Proper Nouns are the names of people, places or things.<br></br><br></br>They always start with a capital letter.
-                            </div>
-
-                            <div class='div_header_types'>
-                                icons
-                            </div>
-                        </div>
-                    
-                    </li>
-
-                    <li class="list-item">
-                        <div class="Types-circle-div">
-                            <TiGroup.TiGroup></TiGroup.TiGroup>
-                        </div>
-                        <div class='Types-div'>
-                        
-                            <div class='div_header'>Cocrete Nouns</div>
-
-                            <div class='div_header_types'>
-                                A person is an individual human being.
-                                For Example:
-                            </div>
-
-                            <div class='div_header_types'>
-                                icons
-                            </div>
-                        </div>
-                    
-                    </li>
-
-                </ul>
-            </div>
-
+                
         </div>
+
+        
 
 
     )

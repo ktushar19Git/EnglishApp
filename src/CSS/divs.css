@@ -1,0 +1,27 @@
+.div_sub_section
+{
+  margin: 20px;
+  border-radius: 10px;
+  border:  solid 1px rgb(37, 0, 139) ;
+  background-color: lavender;
+  
+}
+.div_sub_section_item
+{
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 0px;
+  background-color:rgb(239, 240, 218);
+}
+.internal_text
+{
+    /*
+    border-left: solid maroon 1px;
+    border-right: solid maroon 1px;
+    border-bottom: solid maroon 1px;
+    */
+    padding: 10px;
+    margin-left: 0px ;
+    margin-right: 0px ;
+}

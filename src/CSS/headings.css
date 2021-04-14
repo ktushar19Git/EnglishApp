@@ -31,3 +31,12 @@
 {
     color: orangered;
 }
+.label-sub-heading-item
+{
+  color: black;
+  font-weight: bolder;
+  text-align: left;
+  padding:10px;
+  margin-left: 0px;
+  border-bottom: solid 1px black;
+}

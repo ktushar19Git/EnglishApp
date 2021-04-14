@@ -1,11 +1,10 @@
 .list_div
 {
-    width: 700px;
     table-layout: fixed;
     text-align: left;
     margin: 10px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .un_ordered_list
@@ -20,8 +19,8 @@
     background: transparent;
     text-align: left;
     border-radius: 0;
-    font-weight: bold;
-    list-style-image:url('../images/righthand.jpg');
+    font-weight: bolder;
+    list-style-image:url('../images/bullet.jpg');
 }
 .un_ordered_list li a:hover
 {
@@ -506,6 +505,11 @@
 .color_grey
 {
     color: darkgrey;
+}
+.no_style
+{
+    list-style-type: none;
+    margin: 0px;
 }
 
 
