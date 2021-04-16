@@ -23,5 +23,9 @@
     */
     padding: 10px;
     margin-left: 0px ;
-    margin-right: 0px ;
+    margin-right: 0px;
+}
+.internal_text span{
+  font-weight: bold;
+  color: black;
 }

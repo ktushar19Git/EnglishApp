@@ -4,7 +4,6 @@
     text-align: left;
     margin: 10px;
     padding: 10px;
-    font-size: 13px;
 }
 
 .un_ordered_list
@@ -35,7 +34,6 @@
     display: inline-flex;
     list-style-type: none;
     color: black;
-    font-size: 13px;
 }
 
 .List_item_red
@@ -98,7 +96,6 @@
     text-align: left;
     color:red;
     font-weight: bolder;
-    font-size: 14px;
 }
 .List_item_red ul li ul li
 {
@@ -119,7 +116,6 @@
     text-align: left;
     color:red;
     font-weight: bold;
-    font-size: 12px;
 }
 .List_item_red ul li ul li:first-child
 {
@@ -208,7 +204,6 @@
     text-align: left;
     color:green;
     font-weight: bolder;
-    font-size: 14px;
 }
 .List_item_green ul li ul li
 {
@@ -229,7 +224,6 @@
     text-align: left;
     color:green;
     font-weight: bold;
-    font-size: 12px;
 }
 .List_item_green ul li ul li:first-child
 {
@@ -318,7 +312,6 @@
     text-align: left;
     color:purple;
     font-weight: bolder;
-    font-size: 14px;
 }
 .List_item_purple ul li ul li
 {
@@ -339,7 +332,6 @@
     text-align: left;
     color:purple;
     font-weight: bold;
-    font-size: 12px;
 }
 .List_item_purple ul li ul li:first-child
 {
@@ -426,7 +418,6 @@
     text-align: left;
     color:blue;
     font-weight: bolder;
-    font-size: 14px;
 }
 .List_item_blue ul li ul li
 {
@@ -447,7 +438,6 @@
     text-align: left;
     color:blue;
     font-weight: bold;
-    font-size: 12px;
 }
 .List_item_blue ul li ul li:first-child
 {
@@ -496,7 +486,6 @@
     text-align: left;
     margin: 0px;
     padding: 0px;
-    font-size: 12px;
 }
 .color_purple
 {
