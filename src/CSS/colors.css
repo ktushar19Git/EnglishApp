@@ -46,3 +46,11 @@
 {
     color: lavender;
 }
+.bgcolor-purple
+{
+    background-color: rgb(63, 22, 175);
+}
+.color-purple
+{
+    color: rgb(63, 22, 175);
+}
