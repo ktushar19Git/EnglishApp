@@ -25,14 +25,15 @@ function NounTypes() {
                 <div class="list_div">
                     <p>As you can see, Below are the types of Nouns based on their uses"</p>
                     <ul class="un_ordered_list">
-                        <li>
-                            <a href="#PropNoun">Proper Nouns</a>
-                        </li>
+                        
                         <li>
                             <a href="#ComNoun">Common Nouns</a>
                         </li>
                         <li>
                             <a href="#ConcreteNoun">Concrete Nouns</a>
+                        </li>
+                        <li>
+                            <a href="#PropNoun">Proper Nouns</a>
                         </li>
                         <li>
                             <a href="#AbsNoun">Abstaract Nouns</a>

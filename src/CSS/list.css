@@ -502,5 +502,58 @@
 }
 
 
+.example_list_div
+{
+    margin:0px;
+    width: 320px;
+
+
+}
+.example_list_div ul
+{
+    margin: 0px;
+    padding: 5px;
+    list-style-type: none;
+    display: inline-flex;
+}
+.example_list_div ul li
+{
+    margin: 0px;
+    padding: 10px;
+}
+.example_list_div ul li div:first-child
+{
+    margin: 0px;
+    padding: 10px;
+    background-color: azure;
+    border: red solid 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    
+}
+.example_list_div ul li div span
+{
+    text-align: left;
+  color: #1261A0 ;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+    
+}
+.example_list_div ul li div span:hover
+{
+    color:orangered;
+    
+}
+.example_list_div ul li div:last-child
+{
+    
+    border: red solid 1px;
+    padding: 10px;
+}
 
 

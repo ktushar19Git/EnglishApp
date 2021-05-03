@@ -13,8 +13,48 @@ function AdjectiveExamples()
                <img src={headingbullet}></img> Examples of Adjectives
             </div>
             <div class="Content_desc">
-                <p>Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. </p>
+                <p>There is a variety of adjectives that you can use for a variety of things. Below are some examples of adjectives that have been divided into 8 sections: </p>
             </div>
+        
+        <div class="example_list_div">
+            <ul >
+                <li>
+                    <div>
+                        <span>Opinions</span>
+                    </div>
+                    <div>
+                        The words below are apart of the first group of adjectives that represent opinions. 
+                    </div>
+                </li>
+
+                <li>
+                <div>
+                    <span>Sizes</span>
+                </div>
+                <div>
+                        The words below are apart of the second group of adjectives that represent sizes. 
+                </div>
+                </li>
+
+                <li>
+                <div>
+                    <span>Shapes</span>
+                </div>
+                <div>
+                        The words below are apart of the third group of adjectives that represent shapes. 
+                    </div>
+                </li>
+
+                <li>
+                <div>
+                    <span>Ages</span>
+                </div>
+                <div>
+                        The words below are apart of the fourth group of adjectives that represent ages. 
+                    </div>
+                </li>
+            </ul>
+        </div>
 
             
 

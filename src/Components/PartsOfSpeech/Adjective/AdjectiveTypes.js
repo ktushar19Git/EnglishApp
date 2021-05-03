@@ -26,36 +26,60 @@ function AdjectiveTypes() {
                         <a href="#PrdAdj">Predicate Adjective</a>
                     </li>
                     <li>
-                        <a href="#CompAdj">Coumpound Adjective</a>
+                        <a href="#CompAdj">Compound Adjective</a>
                     </li>
 
                 </ul>
             </div>
 
-            <div id="AttrAdj" class="MarginNormal">
-                <div class="label-sub-heading">
+        <div class="brg_div">
+            <div id="AttrAdj">
+                <div class="adj_head">
                     Attribute Adjective
                 </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
+                <div class="adj_desc">
+                    An Attribute Adjective comes before a noun and it directly modifies it.
+                    <p>Below are a few examples of Attribute Adjectives to help you understand a bit more.</p>
+                    <ul>
+                        <li>That's a very <span>big</span> bag.</li>
+                        <li>The weights at the gym were very <span>heavy</span></li>
+                        <li>That's an <span>expensive</span> watch.</li>
+                        <li>Some animals can be extremely <span>clever</span> at times.</li>
+                    </ul>
                 </div>
             </div>
-            <div id="PrdAdj" class="MarginNormal">
-                <div class="label-sub-heading">
+            <div id="Prdadj">
+                <div class="adj_head">
                     Predicate Adjective
                 </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
+                <div class="adj_desc">
+                    A predicate adjective follows a linking verb and it takes the subject in the sentence and then modifies it. Once it is modified, 
+                    the subject will have a description about its appearance or condition.
+                    <p>Below are a few examples of Attribute Adjectives to help you understand a bit more.</p>
+                    <ul>
+                        <li>That TV show was <span>hilarious</span>.</li>
+                        <li>The wall is <span>purple</span>.</li>
+                        <li>That's an <span>expensive</span> watch.</li>
+                        <li>This trip will be <span>risky</span>.</li>
+                    </ul>
                 </div>
             </div>
-            <div id="CompAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Coumpound Adjective
+            <div id="CompAdj">
+                <div class="adj_head">
+                    Compound Adjective
                 </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
+                <div class="adj_desc">
+                    An Attribute Adjective comes before a noun and it directly modifies it.
+                    <p>Below are a few examples of Attribute Adjectives to help you understand a bit more.</p>
+                    <ul>
+                        <li>That's a very <span>big</span> bag.</li>
+                        <li>The weights at the gym were very <span>heavy</span></li>
+                        <li>That's an <span>expensive</span> watch.</li>
+                        <li>Some animals can be extremely <span>clever</span> at times.</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
         </div>
 

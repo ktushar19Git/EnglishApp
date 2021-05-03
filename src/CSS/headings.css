@@ -38,3 +38,20 @@
   margin-left: 0px;
   border-bottom: solid 1px black;
 }
+.adj_head
+{
+  text-align: left;
+  color: #08a5da;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 10px;
+  font-weight: bolder;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-left: orangered dashed 3px;
+  padding: 10px;
+}
+.adj_head:hover{
+  color: orangered;
+  border-left : #08a5da dashed 3px;
+}
