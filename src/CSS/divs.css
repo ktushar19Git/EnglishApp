@@ -23,5 +23,26 @@
     */
     padding: 10px;
     margin-left: 0px ;
-    margin-right: 0px ;
+    margin-right: 0px;
+}
+.internal_text span{
+  font-weight: bold;
+  color: black;
+}
+.back_section
+{
+  background-color: lavenderblush;
+  border: solid rgb(252, 141, 252) 1px;
+  border-radius: 10px;
+}
+.brg_div
+{
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 0px;
+  background-color:rgb(241, 241, 241);
+}
+.brg_div span{
+  font-weight: bold;
 }
