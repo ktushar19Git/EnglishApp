@@ -46,3 +46,23 @@
 .brg_div span{
   font-weight: bold;
 }
+.tabs-div
+{
+  text-align: left;
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  
+}
+.tabs-div-panel
+{
+  text-align: left;
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 12px;
+}

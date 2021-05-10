@@ -55,3 +55,7 @@
   color: orangered;
   border-left : #08a5da dashed 3px;
 }
+.og_header{
+  font-weight: bold;
+  color: white;
+}

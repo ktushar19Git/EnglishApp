@@ -474,3 +474,12 @@
 .adj_desc ul li span{
   font-weight: bold;
 }
+.align-list{
+  text-align: left;
+  background-color: 'red';
+}
+.icon_style{
+  color: white;
+  width: 25px;
+  height: 25px;
+}

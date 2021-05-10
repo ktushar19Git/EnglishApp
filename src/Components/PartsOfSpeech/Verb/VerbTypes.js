@@ -5,9 +5,43 @@ import Button from '@material-ui/core'
 import AccessibleIcon from '@material-ui/icons/Accessible';
 import headingbullet from '../../../images/righthand.jpg'
 
+import { makeStyles } from '@material-ui/core/styles';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      width: '100%',
+      alignContent: 'left',
+    },
+    heading: {
+      fontSize: theme.typography.pxToRem(13),
+      flexBasis: '33.33%',
+      flexShrink: 0,
+      textAlign:'left',
+      color:'red',
+      fontWeight: 'bold',
+    },
+    secondaryHeading: {
+      fontSize: theme.typography.pxToRem(12),
+      color: theme.palette.text.secondary,
+    },
+  }));
+  
 
 
 function VerbTypes() {
+
+    const classes = useStyles();
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
     return (
 
         <div>
@@ -15,48 +49,131 @@ function VerbTypes() {
             <img src={headingbullet}></img>
                 Types of Verbs
             </div>
+
+            <div class="Content_desc">
+                There are 7 types of Verbs in English. All of them are listed below:
+            </div>
+
+            <div className={classes.root}>
+                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1bh-content"
+                        id="panel1bh-header"
+                    >
+                        <Typography className={classes.heading}>Regular Verbs</Typography>
+                        <Typography className={classes.secondaryHeading}></Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
+                            maximus est, id dignissim quam.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2bh-content"
+                        id="panel2bh-header"
+                    >
+                        <Typography className={classes.heading}>Irregular Verbs</Typography>
+                        <Typography className={classes.secondaryHeading}>
+                        </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
+                            diam eros in elit. Pellentesque convallis laoreet laoreet.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel3bh-content"
+                        id="panel3bh-header"
+                    >
+                        <Typography className={classes.heading}>Linking Verbs</Typography>
+                        <Typography className={classes.secondaryHeading}>
+                        </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography className={classes.secondaryHeading}>
+                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                            vitae egestas augue. Duis vel est augue.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel4bh-content"
+                        id="panel4bh-header"
+                    >
+                        <Typography className={classes.heading}>Transitive Verbs</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                            vitae egestas augue. Duis vel est augue.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel4bh-content"
+                        id="panel4bh-header"
+                    >
+                        <Typography className={classes.heading}>Intransitive Verbs</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                            vitae egestas augue. Duis vel est augue.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel4bh-content"
+                        id="panel4bh-header"
+                    >
+                        <Typography className={classes.heading}>Finite Verbs</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                            vitae egestas augue. Duis vel est augue.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel4bh-content"
+                        id="panel4bh-header"
+                    >
+                        <Typography className={classes.heading}>Infinite Verbs</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Typography>
+                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                            vitae egestas augue. Duis vel est augue.
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+            </div>
+
             
-            <div class="list_div">
-                <p>Following are the types of Adjectives based on their uses.</p>
-                <ul class="un_ordered_list">
-                    <li>
-                        <a href="#AttrAdj">Attrubite Adjective</a>
-                    </li>
-                    <li>
-                        <a href="#PrdAdj">Predicate Adjective</a>
-                    </li>
-                    <li>
-                        <a href="#CompAdj">Coumpound Adjective</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div id="AttrAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Attribute Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
-            </div>
-            <div id="PrdAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Predicate Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
-            </div>
-            <div id="CompAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Coumpound Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
-            </div>
-
+            
         </div>
 
 

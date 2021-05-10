@@ -1,11 +1,13 @@
 import React from 'react'
+import logoheader from '../images/LogoEnglish.png'
 
 function Header()
 {
     return(
 
-    <div class="Headline">
-            <h2>English Blaze</h2>
+    <div style={{textAlign:'left',}} >
+                   
+
     </div>
 
        

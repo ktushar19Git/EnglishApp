@@ -555,5 +555,50 @@
     border: red solid 1px;
     padding: 10px;
 }
+.Exp_items_coral 
+{
+    background-image: linear-gradient(to right, #c31432, #240b36);
+    padding: 10px;
+    margin: 10px;
+    border: silver solid 1px;
+    border-radius: 10px;
+}
+.Exp_items 
+{
+    text-align: left;
+    list-style-type: none;
+}
+.Exp_items_blue 
+{
+    background-image: linear-gradient(to right, #00C9FF, #92FE9D);
+    padding: 10px;
+    margin: 10px;
+    border: silver solid 1px;
+    border-radius: 10px;
+}
+.Exp_items_green 
+{
+    background-image: linear-gradient(to right, #52c234, #061700);
+    padding: 10px;
+    margin: 10px;
+    border: silver solid 1px;
+    border-radius: 10px;
+}
+.Exp_items_purple 
+{
+    background-image: linear-gradient(to right, #ad5389, #3c1053);
+    padding: 10px;
+    margin: 10px;
+    border: silver solid 1px;
+    border-radius: 10px;
+}
+.Exp_items_orange 
+{
+    background-image: linear-gradient(to right, #C02425, #F0CB35);
+    padding: 10px;
+    margin: 10px;
+    border: silver solid 1px;
+    border-radius: 10px;
+}
 
 
