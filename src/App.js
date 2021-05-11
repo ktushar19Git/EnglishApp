@@ -8,6 +8,7 @@ import './CSS/divs.css'
 import './CSS/colors.css'
 import './CSS/Menu.css'
 import './CSS/Admin.css'
+import './CSS/Questions.css'
 import Navbar from './Components/Navbar';
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";

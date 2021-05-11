@@ -1,0 +1,13 @@
+.div-Question{
+    margin: 20px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #00C9FF, #00C9FF);
+    font-weight:bold;
+    
+}
+.div-Answer{
+    margin: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    
+}

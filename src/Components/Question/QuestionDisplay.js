@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 import firebase from '../../services/firebase';
 
+import Button from '@material-ui/core/Button';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Table } from '@material-ui/core';
@@ -71,9 +73,9 @@ class QuestionDisplay extends Component
                 <div class="label-heading">
 
                 </div>
-                <Grid item xs={12}>
+                <Grid item xs={8}>
                   <Paper >
-                    <td class="tdHalf">
+                    <td style={{width:'100%',}}>
                       <h3 style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Existing Questions</h3>
                       <Table aria-label=" table" size="small" >
                         <TableHead>
@@ -86,12 +88,21 @@ class QuestionDisplay extends Component
                               return (
                                 <TableRow >
                                   <TableCell align="left" >
-                                  <div>{InputData.Question}</div>
-                                    <div>{InputData.Answer1}</div>
-                                    <div>{InputData.Answer2}</div>
-                                    <div>{InputData.Answer3}</div>
-                                    <div>{InputData.Answer4}</div>
-                                    <div>{InputData.CorrectAnswer}</div>
+                                    <div class="div-Question">{InputData.Question}</div>
+                                    <div class="div-Answer">{InputData.Answer1}</div>
+                                    <div class="div-Answer">{InputData.Answer2}</div>
+                                    <div class="div-Answer">{InputData.Answer3}</div>
+                                    <div class="div-Answer">{InputData.Answer4}</div>
+                                    <div class="div-Answer">{InputData.CorrectAnswer}</div>
+                                    <div>
+                                          <Button
+                                            style={{
+                                              width:"360px",
+                                            }}
+                                          >
+                                          <ExitToAppIcon></ExitToAppIcon>Submit
+                                        </Button>
+                                    </div>
                                   </TableCell>
                                 </TableRow>
                                 
@@ -104,6 +115,7 @@ class QuestionDisplay extends Component
                         </TableBody>
                       </Table>
                     </td>
+                    
                   </Paper>
                 </Grid>
                 <div class="label-heading">

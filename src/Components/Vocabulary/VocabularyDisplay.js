@@ -26,6 +26,7 @@ class VocabularyDisplay extends Component
         super(props);
         
         this.fnFetchData = this.fnFetchData.bind(this);
+        this.fnFetchVocabCategory = this.fnFetchVocabCategory.bind(this);
         
         this.state = {
             VocabCategory :"",
@@ -37,6 +38,32 @@ class VocabularyDisplay extends Component
 
         }
         this.fnFetchData();
+    }
+    fnFetchVocabCategory(e)
+    {
+        let localVocabCategory = "";        
+        if(e == 1)
+        {
+          localVocabCategory = "Hospital";
+        }
+        else if(e == 2)
+        {
+          localVocabCategory = "House";
+        }
+        else if(e == 3)
+        {
+          localVocabCategory = "School";
+        }
+        else if(e == 4)
+        {
+          localVocabCategory = "Education";
+        }
+        else if(e == 5)
+        {
+          localVocabCategory = "Business";
+        }
+        
+        return localVocabCategory;
     }
     
     fnFetchData() {
@@ -76,9 +103,9 @@ class VocabularyDisplay extends Component
                       <Table aria-label=" table" size="small" >
                         <TableHead>
                           <TableRow>
-                            <TableCell align="left">Category</TableCell>
-                            <TableCell align="left">Text</TableCell>
-                            <TableCell align="left">Meaning</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Category</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Text</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Meaning</TableCell>
 
                           </TableRow>
                         </TableHead>
@@ -88,7 +115,7 @@ class VocabularyDisplay extends Component
                             this.state.InputData.map(InputData => {
                               return (
                                 <TableRow key={InputData.name}>
-                                  <TableCell align="left" >{InputData.VocabCategory}</TableCell>
+                                  <TableCell align="left" >{this.fnFetchVocabCategory(InputData.VocabCategory)}</TableCell>
                                   <TableCell align="left" >{InputData.Vocabulary}</TableCell>
                                   <TableCell align="left" >{InputData.VocabMeaning}</TableCell>
 

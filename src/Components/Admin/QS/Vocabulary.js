@@ -26,9 +26,12 @@ class Vocabulary extends Component
         //this.fnShowError = this.fnShowError.bind(this);
         
         this.state = {
-            VocabCategory :"",
+            VocabCategory :"1",
+            VocabLevel:"1",
             Vocabulary:"",
             VocabMeaning:"",
+            VocabSentence1:"",
+            VocabSentence2:"",
             strErrMessage:"",
             
 
@@ -62,6 +65,10 @@ class Vocabulary extends Component
             strErr = strErr + "Please Select Category\n";
 
         }
+        if (this.state.VocabLevel == "") {
+            strErr = strErr + "Please Select Level\n";
+
+        }
         if (this.state.Vocabulary == "") {
             strErr = strErr + "Please enter Vocabulary Text 1\n";
         }
@@ -89,8 +96,11 @@ class Vocabulary extends Component
                 //alert(localStorage.getItem("g_user_id"));
                 db.collection("Vocabulary").add({
                     VocabCategory:this.state.VocabCategory,
+                    VocabLevel:this.state.VocabLevel,
                     Vocabulary: this.state.Vocabulary,
                     VocabMeaning: this.state.VocabMeaning,
+                    VocabSentence1:this.state.VocabSentence1,
+                    VocabSentence2:this.state.VocabSentence2,
                     //uid: localStorage.getItem("g_user_id")
                 })
 
@@ -154,6 +164,34 @@ class Vocabulary extends Component
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>Vocabulary Level</td>
+                                    <td>
+                                    <FormControl variant="filled" color="primary">
+                                                    <InputLabel htmlFor="outlined-VocabLevel-native-simple">Vocabulary Level</InputLabel>
+                                                    <Select
+                                                    native
+                                                    value={this.state.VocabLevel}
+                                                    onChange={this.HandleChange}
+                                                    label="VocabLevel"
+                                                    inputProps={{
+                                                        name: 'VocabLevel',
+                                                        id: 'outlined-VocabLevel-native-simple',
+                                                    }}
+                                                    style={{
+                                                        //height: "45px",
+                                                        width:"360px",
+                                                    }}
+                                                    >
+                                                    
+                                                    <option value={1}>Basic</option>
+                                                    <option value={2}>Intermediate</option>
+                                                    <option value={3}>Advanced</option>
+                                                    
+                                                    </Select>
+                                                </FormControl>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>Vocabulary Description</td>
                                     <td>
                                         <TextField
@@ -177,6 +215,35 @@ class Vocabulary extends Component
                                             value={this.state.VocabMeaning}
                                             onChange={this.HandleChange}
                                             name="VocabMeaning"
+                                            
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sentence 1</td>
+                                    <td>
+                                        <TextField
+                                            label="Vocabulary Sentence 1"
+                                            variant= "outlined"
+                                            id='idVocabSentence1'
+                                            value={this.state.VocabSentence1}
+                                            onChange={this.HandleChange}
+                                            name="VocabSentence1"
+                                            
+                                        />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sentence 2</td>
+                                    <td>
+                                        <TextField
+                                            label="Vocabulary Sentence 2"
+                                            variant= "outlined"
+                                            id='idVocabSentence2'
+                                            value={this.state.VocabSentence2}
+                                            onChange={this.HandleChange}
+                                            name="VocabSentence2"
                                             
                                         />
                                     </td>
