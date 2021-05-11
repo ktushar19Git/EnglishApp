@@ -23,6 +23,8 @@ import Prepositions from './Components/PartsOfSpeech/Preposition/Prepositions';
 import Interjections from './Components/PartsOfSpeech/Interjection/Interjections';
 import Question from './Components/Admin/QS/Question';
 import Vocabulary from './Components/Admin/QS/Vocabulary';
+import VocabularyDisplay from './Components/Vocabulary/VocabularyDisplay';
+import QuestionDisplay from './Components/Question/QuestionDisplay';
 
 
 
@@ -43,6 +45,8 @@ function App() {
           <Route path="/Interjections" exact component={Interjections} />
           <Route path="/Question" exact component={Question} />
           <Route path="/Vocabulary" exact component={Vocabulary} />
+          <Route path="/VocabularyDisplay" exact component={VocabularyDisplay} />
+          <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
           
 
         </Switch>

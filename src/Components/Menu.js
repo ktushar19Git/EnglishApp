@@ -10,7 +10,7 @@ function Menu()
     <div class="Menu">
          
         <ul >
-            <li><img src={logoheader} ></img></li>
+            
             <li><a>Grammar</a>
                 <div class="SubMenu">
                     <ul >
@@ -65,10 +65,25 @@ function Menu()
                 </div>
             </li>
 
-
-            <li>Spelling</li>
             <li>Punctuation</li>
-            <li>Vocabulary</li>
+            <li><a>Vocabulary</a>
+                <div class="SubMenu">
+                    <ul >
+                        <li>
+                            <a href="VocabularyDisplay">Search Vocabulary</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a>Practice</a>
+                <div class="SubMenu">
+                    <ul >
+                        <li>
+                            <a href="QuestionDisplay">Practice Questions</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             <li>Article</li>
         </ul>
 
