@@ -88,20 +88,22 @@ class QuestionDisplay extends Component
                               return (
                                 <TableRow >
                                   <TableCell align="left" >
-                                    <div class="div-Question">{InputData.Question}</div>
-                                    <div class="div-Answer">{InputData.Answer1}</div>
-                                    <div class="div-Answer">{InputData.Answer2}</div>
-                                    <div class="div-Answer">{InputData.Answer3}</div>
-                                    <div class="div-Answer">{InputData.Answer4}</div>
-                                    <div class="div-Answer">{InputData.CorrectAnswer}</div>
-                                    <div>
-                                          <Button
-                                            style={{
-                                              width:"360px",
-                                            }}
-                                          >
-                                          <ExitToAppIcon></ExitToAppIcon>Submit
-                                        </Button>
+                                    <div class="div-QuestionTemplate">
+                                      <div class="div-Question">{InputData.Question}</div>
+                                      <div class="div-Answer">{InputData.Answer1}</div>
+                                      <div class="div-Answer">{InputData.Answer2}</div>
+                                      <div class="div-Answer">{InputData.Answer3}</div>
+                                      <div class="div-Answer">{InputData.Answer4}</div>
+                                      <div class="div-Answer">{InputData.CorrectAnswer}</div>
+                                      <div>
+                                            <Button
+                                              style={{
+                                                width:"360px",
+                                              }}
+                                            >
+                                            <ExitToAppIcon></ExitToAppIcon>Submit
+                                          </Button>
+                                      </div>
                                     </div>
                                   </TableCell>
                                 </TableRow>
