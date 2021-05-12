@@ -319,7 +319,8 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: white;
+  /*background-color: white;*/
+  background: linear-gradient(to right, #acb6e5, #86fde8);
   border: 1px solid black;
 }
 .Highlighters
@@ -427,7 +428,7 @@
 }
 .EndofSection
 {
-  border-bottom: silver double 1px;
+  border-bottom: black solid 5px;
 }
 .back_stage{
   background-color: rgb(226, 239, 255);
