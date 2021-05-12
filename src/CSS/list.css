@@ -119,7 +119,7 @@
 }
 .List_item_red ul li ul li:first-child
 {
-    background-color: white;
+    
     text-align: left;
 }
 .List_item_red ul li ul li:first-child:hover
@@ -129,7 +129,7 @@
 }
 .List_item_red ul li ul li:last-child
 {
-    background-color: white;
+    
     text-align: left;
     color: black;
 }
@@ -227,7 +227,7 @@
 }
 .List_item_green ul li ul li:first-child
 {
-    background-color: white;
+    
     text-align: left;
 }
 .List_item_green ul li ul li:first-child:hover
@@ -237,7 +237,7 @@
 }
 .List_item_green ul li ul li:last-child
 {
-    background-color: white;
+    
     text-align: left;
     color: black;
 }
@@ -335,7 +335,7 @@
 }
 .List_item_purple ul li ul li:first-child
 {
-    background-color: white;
+    
     text-align: left;
 }
 .List_item_purple ul li ul li:first-child:hover
@@ -345,7 +345,7 @@
 }
 .List_item_purple ul li ul li:last-child
 {
-    background-color: white;
+    
     text-align: left;
     color: black;
 }
@@ -441,7 +441,7 @@
 }
 .List_item_blue ul li ul li:first-child
 {
-    background-color: white;
+    
     text-align: left;
 }
 .List_item_blue ul li ul li:first-child:hover
@@ -451,7 +451,6 @@
 }
 .List_item_blue ul li ul li:last-child
 {
-    background-color: white;
     text-align: left;
     color: black;
 }
