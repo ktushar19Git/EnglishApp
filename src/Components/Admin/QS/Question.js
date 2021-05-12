@@ -128,9 +128,7 @@ class Question extends Component
                         <td>
                             
                             <table class="DataEntryTable">
-                                <tr>
-                                    <td colSpan="2"><div>Question Management</div></td>
-                                </tr>
+                                
                                 <tr>
                                     <td colSpan="2"><div>Question Management</div></td>
                                 </tr>
