@@ -21,8 +21,10 @@ class Menu extends Component{
                         <li><div><span>Question Maintenance</span><FcNext></FcNext></div>
                             <div class="DivSubMenu">
                                 <ul>
+                                    <li><FcCheckmark></FcCheckmark><a href="Subject">Add Subject</a></li>
+                                    <li><FcCheckmark></FcCheckmark><a href="Chapter">Add Chapter</a></li>
                                     <li><FcCheckmark></FcCheckmark><a href="Question">Add Questionaire</a></li>
-                                    <li><FcCheckmark></FcCheckmark><a href="Student">Search Staff</a></li>
+                                    
                                 </ul>
                             </div>
                         </li>

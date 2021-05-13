@@ -16,6 +16,7 @@ function Header()
     <div style={{textAlign:'left',}} >
                 <img src={logoheader} ></img>
                 <a href="LoginRegister" style={{textAlign:'right',width:'100%',paddingLeft:'500px'}}>Login/Register</a>   
+                <a href="Subject" style={{textAlign:'right',width:'100%',paddingLeft:'20px'}}>Admin Panel</a>   
 
 
                 <FormControlLabel style={{paddingLeft:'20px'}}
