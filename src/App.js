@@ -26,6 +26,7 @@ import Question from './Components/Admin/QS/Question';
 import Vocabulary from './Components/Admin/QS/Vocabulary';
 import VocabularyDisplay from './Components/Vocabulary/VocabularyDisplay';
 import QuestionDisplay from './Components/Question/QuestionDisplay';
+import LoginRegister from './Components/LoginRegister/LoginRegister';
 
 
 
@@ -48,7 +49,7 @@ function App() {
           <Route path="/Vocabulary" exact component={Vocabulary} />
           <Route path="/VocabularyDisplay" exact component={VocabularyDisplay} />
           <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
-          
+          <Route path="/LoginRegister" exact component={LoginRegister} />
 
         </Switch>
       </Router>

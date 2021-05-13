@@ -24,7 +24,7 @@ function Nouns()
                         <tr>
                             <td class="Def_title">
                                 <div>
-                                    Nouns<DoubleArrowIcon style={{ color: 'white', verticalAlign: 'middle', }}></DoubleArrowIcon>
+                                    Nouns<DoubleArrowIcon style={{ verticalAlign: 'middle', }}></DoubleArrowIcon>
                                 </div>
                             </td>
                             <td >

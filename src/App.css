@@ -205,10 +205,10 @@
 .ForwardArrow
 {
   vertical-align: middle;
-  color: white;
+  color: black;
 }
 .Def_title{
-  color: white ; 
+  color: black ; 
   
   /*background-color: #1261A0;*/
   border-top: transparent solid 1px;
@@ -256,7 +256,7 @@
 }
 .FullTable{
   width: 98%;
-  background: linear-gradient(to right, #b3612b, #22b1b1);
+  background: linear-gradient(to right, #FBFCFC, #22b1b1);
   margin: 10px;
   border: silver solid 1px;
 }
@@ -328,7 +328,7 @@
   border-radius: 10px;
   /*background-color: white;*/
   /*background: linear-gradient(to right, #acb6e5, #86fde8);*/
-  background: linear-gradient(to right, #7d9696, #7d9696); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #FBFCFC, #ECF0F1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: 1px solid black;
 }
 .Highlighters
@@ -495,4 +495,13 @@
   color: white;
   width: 25px;
   height: 25px;
+}
+.iconinfo
+{
+    width: 25px;
+    height: 25px;
+}
+.Tooltip
+{
+  background-color: #3c1053;
 }

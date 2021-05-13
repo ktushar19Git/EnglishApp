@@ -1,9 +1,30 @@
 import React from 'react'
 import PlaceIcon from '@material-ui/icons/Place';
 import {FcBusinessman, FcBusinesswoman, FcCloseUpMode} from 'react-icons/fc';
-import {FcOrganization, FcGlobe, FcPlanner} from 'react-icons/fc';
+import {FcOrganization, FcGlobe, FcPlanner,FcInfo} from 'react-icons/fc';
 import {FaCat} from 'react-icons/fa';
 import {GiElephant} from 'react-icons/gi';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
+
+
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+
+
+const useStylesBootstrap = makeStyles((theme) => ({
+    arrow: {
+      color: theme.palette.common.black,
+    },
+    tooltip: {
+      backgroundColor: theme.palette.common.black,
+    },
+  }));
+
+  function BootstrapTooltip(props) {
+    const classes = useStylesBootstrap();
+  
+    return <Tooltip arrow classes={classes} {...props} />;
+  }
 
 function NounExamples()
 
@@ -24,14 +45,20 @@ function NounExamples()
                         
                         <ul>
                             <li>
-                                Person
+                                Person 
+                                <BootstrapTooltip  title="Nouns are very useful components Bootstap" >
+                                    <FcInfo class="iconinfo"></FcInfo>
+                                </BootstrapTooltip >
+
                             </li>
                             <li>
                                 <div>
                                     A noun that acts as a person is a human being regarded as an individual.
                                 </div>
                                 <div>
+                                
                                     <FcBusinessman class="iconstandard"></FcBusinessman>
+                                
                                     <FcBusinesswoman class="iconstandard"></FcBusinesswoman>
                                 </div>
                             </li>
@@ -50,7 +77,9 @@ function NounExamples()
                         
                         <ul>
                             <li>
-                                Place
+                                Place <Tooltip title="Place Nouns are very useful components" TransitionComponent={Zoom}>
+                                    <FcInfo class="iconinfo"></FcInfo>
+                                </Tooltip>
                             </li>
                             <li>
                                 <div>
@@ -77,7 +106,10 @@ function NounExamples()
                         
                         <ul>
                             <li>
-                                Animal
+                                Animal 
+                                <Tooltip title="Nouns are very useful components" aria-label="add">
+                                    <FcInfo class="iconinfo"></FcInfo>
+                                </Tooltip>
                             </li>
                             <li>
                                 <div>
@@ -103,7 +135,10 @@ function NounExamples()
                         
                         <ul>
                             <li>
-                                Thing
+                                Thing 
+                                <Tooltip title="Nouns are very useful components" class="Tooltip" aria-label="add">
+                                    <FcInfo class="iconinfo"></FcInfo>
+                                </Tooltip>
                             </li>
                             <li>
                                 <div>
