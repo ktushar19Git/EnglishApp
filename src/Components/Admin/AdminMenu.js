@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {FcNext,FcCheckmark,FcCustomerSupport} from 'react-icons/fc'
 
 
-class Menu extends Component{
+class AdminMenu extends Component{
 
     
 
@@ -32,7 +32,7 @@ class Menu extends Component{
                             <div class="DivSubMenu">
                                 <ul>
                                     <li><FcCheckmark></FcCheckmark><a href="Vocabulary">Add Vocabulary</a></li>
-                                    <li><FcCheckmark></FcCheckmark><a href="Student">Search Staff</a></li>
+                                    <li><FcCheckmark></FcCheckmark><a href="Synonyms">Add Synonyms</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -59,4 +59,4 @@ class Menu extends Component{
         )
     }
 }
-export default Menu
+export default AdminMenu

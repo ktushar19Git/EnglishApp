@@ -17,57 +17,34 @@ import Navbar from '../Navbar';
 import Header from "../Header";
 import Menu from "../Menu";
 
-import logoheader from '../../../src/images/LogoEnglish.png'
 
 
-class VocabularyDisplay extends Component
+class SynonymDisplay extends Component
 {
     constructor(props)
     {
         super(props);
         
         this.fnFetchData = this.fnFetchData.bind(this);
-        this.fnFetchVocabCategory = this.fnFetchVocabCategory.bind(this);
+        
         
         this.state = {
-            VocabCategory :"",
-            Vocabulary:"",
-            VocabMeaning:"",
-            VocabSentence1:"",
-            VocabSentence2:"",
+            SynonymLevel : "1",
+            SynonymCategory : "1",
+            SName :"",
+            Synonym1:"",
+            Synonym2:"",
+            Synonym3:"",
             strErrMessage:"",
+            QRichText : "",
             InputData: []
 
 
         }
         this.fnFetchData();
     }
-    fnFetchVocabCategory(e)
-    {
-        let localVocabCategory = "";        
-        if(e == 1)
-        {
-          localVocabCategory = "Hospital";
-        }
-        else if(e == 2)
-        {
-          localVocabCategory = "House";
-        }
-        else if(e == 3)
-        {
-          localVocabCategory = "School";
-        }
-        else if(e == 4)
-        {
-          localVocabCategory = "Education";
-        }
-        else if(e == 5)
-        {
-          localVocabCategory = "Business";
-        }
-        
-        return localVocabCategory;
-    }
+
+    
     
     fnFetchData() {
         //db.collection('InputData').doc(uid).get()
@@ -75,7 +52,7 @@ class VocabularyDisplay extends Component
         
         //db.collection("Vocabulary").where("uid", "==", localStorage.getItem("g_user_id")).get()  
         
-        db.collection("Vocabulary").get()
+        db.collection("Synonyms").get()
           .then(querySnapshot => {
               console.log(querySnapshot.docs);
             const InputData = []
@@ -99,14 +76,18 @@ class VocabularyDisplay extends Component
                 <div class="label-heading">
 
                 </div>
-                <Grid item xs={12} style={{alignItems:'center'}}>
-                  <Paper style={{alignItems:'center'}}>
+                <Grid item xs={12}>
+                  <Paper >
                     <td class="tdHalf">
                       <h3 style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Existing Data</h3>
                       <Table aria-label=" table" size="small" >
                         <TableHead>
                           <TableRow>
-                            
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Name</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Name 1</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Name 2</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Name 3</TableCell>
+                            <TableCell align="left" style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Name 3</TableCell>
 
                           </TableRow>
                         </TableHead>
@@ -116,28 +97,12 @@ class VocabularyDisplay extends Component
                             this.state.InputData.map(InputData => {
                               return (
                                 <TableRow key={InputData.name}>
-                                  <TableCell align="center" >
-                                    <div class="div-Vocaulary">
-                                      <div class="div-Vocaulary-Text">{InputData.Vocabulary}</div>
-                                      <div class="div-Vocaulary-Meaning">{InputData.VocabMeaning}</div>
-                                      <div>
-                                        <img src={logoheader} ></img>
-                                      </div>
+                                  <TableCell align="left" >{InputData.SName}</TableCell>
+                                  <TableCell align="left" >{InputData.Synonym1}</TableCell>
+                                  <TableCell align="left" >{InputData.Synonym2}</TableCell>
+                                  <TableCell align="left" >{InputData.Synonym3}</TableCell>
+                                  <TableCell align="left" >{InputData.QRichText}</TableCell>
 
-                                      <div class="div-Vocaulary-examples">
-                                        <ul>
-                                          <li>
-                                            {InputData.VocabSentence1}
-                                          </li>
-                                          <li>
-                                            {InputData.VocabSentence2}
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </TableCell>  
-
-                                  
                                 </TableRow>
                               )
                             })
@@ -160,4 +125,4 @@ class VocabularyDisplay extends Component
         )
     }
 }
-export default VocabularyDisplay
+export default SynonymDisplay

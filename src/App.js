@@ -9,6 +9,7 @@ import './CSS/colors.css'
 import './CSS/Menu.css'
 import './CSS/Admin.css'
 import './CSS/Questions.css'
+import './CSS/Vocabulary.css'
 import Navbar from './Components/Navbar';
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";
@@ -22,13 +23,21 @@ import Adverbs from './Components/PartsOfSpeech/Adverb/Adverbs';
 import Conjunctions from './Components/PartsOfSpeech/Conjunction/Conjunctions';
 import Prepositions from './Components/PartsOfSpeech/Preposition/Prepositions';
 import Interjections from './Components/PartsOfSpeech/Interjection/Interjections';
-import Question from './Components/Admin/QS/Question';
-import Vocabulary from './Components/Admin/QS/Vocabulary';
 import VocabularyDisplay from './Components/Vocabulary/VocabularyDisplay';
 import QuestionDisplay from './Components/Question/QuestionDisplay';
 import LoginRegister from './Components/LoginRegister/LoginRegister';
+
+
+/*Question Mgmt */
+import Question from './Components/Admin/QS/Question';
 import Subject from './Components/Admin/QS/Subject';
 import Chapter from './Components/Admin/QS/Chapter';
+
+/*Vocabulary Mgmt*/
+import Vocabulary from './Components/Admin/Vocabulary/Vocabulary';
+import Synonyms from './Components/Admin/Vocabulary/Synonyms';
+import SynonymDisplay from './Components/Vocabulary/SynonymDisplay';
+
 
 
 
@@ -47,13 +56,23 @@ function App() {
           <Route path="/Conjunctions" exact component={Conjunctions} />
           <Route path="/Prepositions" exact component={Prepositions} />
           <Route path="/Interjections" exact component={Interjections} />
-          <Route path="/Question" exact component={Question} />
-          <Route path="/Vocabulary" exact component={Vocabulary} />
+          
+          <Route path="/LoginRegister" exact component={LoginRegister} />
+
+          
           <Route path="/VocabularyDisplay" exact component={VocabularyDisplay} />
           <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
-          <Route path="/LoginRegister" exact component={LoginRegister} />
+          <Route path="/SynonmsDisplay" exact component={SynonymDisplay} />
+
+          
           <Route path="/Subject" exact component={Subject} />
           <Route path="/Chapter" exact component={Chapter} />
+          <Route path="/Question" exact component={Question} />
+
+          <Route path="/Vocabulary" exact component={Vocabulary} />
+          <Route path="/Synonyms" exact component={Synonyms} />
+
+
 
         </Switch>
       </Router>

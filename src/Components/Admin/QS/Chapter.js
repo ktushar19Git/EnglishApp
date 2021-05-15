@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 
 
-import Menu from '../Menu'
+import Menu from '../AdminMenu'
 import Header from '../../Header'
 import firebase from '../../../services/firebase';
 

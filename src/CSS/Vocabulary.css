@@ -1,0 +1,31 @@
+.div-Vocaulary
+{
+    border-radius: 15px;
+    border:solid crimson 2px;
+    padding: 10px;
+    font-size: 12px;
+}
+.div-Vocaulary-Text
+{
+    
+    
+    margin-top: 10px;
+    font-weight: bolder;
+    background-color: rgb(128, 19, 0);
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    
+}
+
+.div-Vocaulary-Meaning
+{
+    padding: 5px;
+    font-weight: bolder;
+}
+.div-Vocaulary-examples
+{
+    padding: 5px;
+    text-align: left;
+    background-color: azure;
+}

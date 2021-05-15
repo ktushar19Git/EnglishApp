@@ -70,8 +70,21 @@ function Menu()
                 <div class="SubMenu">
                     <ul >
                         <li>
-                            <a href="VocabularyDisplay">Search Vocabulary</a>
+                            <a href="VocabularyDisplay">Vocabulary</a>
                         </li>
+                        <li>
+                            <a href="SynonmsDisplay">Synonyms</a>
+                        </li>
+                        <li>
+                            <a href="AntonymsDisplay">Antonyms</a>
+                        </li>
+                        <li>
+                            <a href="PhrasesDisplay">Phrases</a>
+                        </li>
+                        <li>
+                            <a href="EdiomsDisplay">Edioms</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </li>

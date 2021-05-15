@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 
 
-import Menu from '../Menu'
+import Menu from '../AdminMenu'
 import Header from '../../Header'
 import firebase from '../../../services/firebase';
 
@@ -13,26 +13,35 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
+import ReactQuill, { Quill, Mixin, Toolbar } from 'react-quill'; // ES6
+import 'react-quill/dist/quill.snow.css'; // ES6
 
 
-class Vocabulary extends Component
+
+
+
+class Synonyms extends Component
 {
+    
     constructor(props)
     {
         super(props);
         //this.fnCreateAccount = this.fnCreateAccount.bind(this);
-        this.fnSubmitVocabulary = this.fnSubmitVocabulary.bind(this);        
+        this.fnSubmitSynonyms = this.fnSubmitSynonyms.bind(this);        
         this.HandleChange = this.HandleChange.bind(this);
+        this.HandleRichChange = this.HandleRichChange.bind(this);
         //this.fnShowError = this.fnShowError.bind(this);
         
         this.state = {
-            VocabCategory :"1",
-            VocabLevel:"1",
-            Vocabulary:"",
-            VocabMeaning:"",
-            VocabSentence1:"",
-            VocabSentence2:"",
+            SynonymLevel : "1",
+            SynonymCategory : "1",
+            SName :"",
+            Synonym1:"",
+            Synonym2:"",
+            Synonym3:"",
             strErrMessage:"",
+            QRichText : "",
+
             
 
         }
@@ -45,8 +54,34 @@ class Vocabulary extends Component
             }
         )
     }
+    HandleRichChange(value)
+    {
+        this.setState(
+            {
+                QRichText : value
+            }
+        )
+    }
+    modules = {
+        toolbar: [
+          [{ 'header': [1, 2, false] }],
+          ['bold', 'italic', 'underline','strike', 'blockquote'],
+          [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+          ['link', 'image'],
+          ['clean']
+        ],
+      };
+     
+      formats = [
+        'header',
+        'bold', 'italic', 'underline', 'strike', 'blockquote',
+        'list', 'bullet', 'indent',
+        'link', 'image'
+      ];
+
     
-    fnSubmitVocabulary() {
+    
+    fnSubmitSynonyms() {
         /*
         try {
           await signUp(
@@ -61,21 +96,22 @@ class Vocabulary extends Component
         */
 
         let strErr = "";
-        if (this.state.VocabCategory == "") {
+        if (this.state.SynonymCategory == "") {
             strErr = strErr + "Please Select Category\n";
 
         }
-        if (this.state.VocabLevel == "") {
+        if (this.state.SynonymLevel == "") {
             strErr = strErr + "Please Select Level\n";
 
         }
-        if (this.state.Vocabulary == "") {
-            strErr = strErr + "Please enter Vocabulary Text 1\n";
+        if (this.state.SName == "") {
+            strErr = strErr + "Please enter Synonym \n";
         }
-        if (this.state.VocabMeaning == "") {
-            strErr = strErr + "Please enter Vocabulary Meaning 2\n";
+        if (this.state.Synonym1 == "") {
+            strErr = strErr + "Please enter Synonym 1 \n";
         }
         
+        alert(this.state.QRichText);
         
 
         if (strErr != "") {
@@ -94,17 +130,18 @@ class Vocabulary extends Component
                 const db = firebase.firestore();
                 //alert(document.getElementById("posted_datetime-local").value);
                 //alert(localStorage.getItem("g_user_id"));
-                db.collection("Vocabulary").add({
-                    VocabCategory:this.state.VocabCategory,
-                    VocabLevel:this.state.VocabLevel,
-                    Vocabulary: this.state.Vocabulary,
-                    VocabMeaning: this.state.VocabMeaning,
-                    VocabSentence1:this.state.VocabSentence1,
-                    VocabSentence2:this.state.VocabSentence2,
+                db.collection("Synonyms").add({
+                    SynonymCategory:this.state.SynonymCategory,
+                    SynonymLevel:this.state.SynonymLevel,
+                    SName: this.state.SName,
+                    Synonym1: this.state.Synonym1,
+                    Synonym2: this.state.Synonym2,
+                    Synonym3: this.state.Synonym3,
+                    QRichText:this.state.QRichText,
                     //uid: localStorage.getItem("g_user_id")
                 })
 
-                alert("Record Added Successfully");
+                alert("Synonym Added Successfully");
                 //this.fnFetchData();
                 }
             }
@@ -132,21 +169,38 @@ class Vocabulary extends Component
                             <table class="DataEntryTable">
                                 
                                 <tr>
-                                    <td colSpan="2"><div>Vocabulary Management</div></td>
+                                    <td colSpan="2"><div>Synonym Management</div></td>
                                 </tr>
+
                                 <tr>
-                                    <td>Vocabulary Category</td>
+                                    <td>Rich Text Editor</td>
+                                    <td>
+                                        <ReactQuill
+                                            placeholder="Write your question"
+                                            value={this.state.QRichText}
+                                            theme="snow"
+                                            modules={this.modules}
+                                            formats={this.formats}
+                                            onChange={this.HandleRichChange}
+                                        >
+
+                                        </ReactQuill>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Synonym Category</td>
                                     <td>
                                     <FormControl variant="filled" color="primary">
-                                                    <InputLabel htmlFor="outlined-VocabCategory-native-simple">Vocabulary Category</InputLabel>
+                                                    <InputLabel htmlFor="outlined-SynonymCategory-native-simple">Synonym Category</InputLabel>
                                                     <Select
                                                     native
-                                                    value={this.state.VocabCategory}
+                                                    value={this.state.SynonymCategory}
                                                     onChange={this.HandleChange}
-                                                    label="VocabCategory"
+                                                    label="SynonymCategory"
                                                     inputProps={{
-                                                        name: 'VocabCategory',
-                                                        id: 'outlined-VocabCategory-native-simple',
+                                                        name: 'SynonymCategory',
+                                                        id: 'outlined-SynonymCategory-native-simple',
                                                     }}
                                                     style={{
                                                         //height: "45px",
@@ -164,18 +218,18 @@ class Vocabulary extends Component
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Vocabulary Level</td>
+                                    <td>Synonym Level</td>
                                     <td>
                                     <FormControl variant="filled" color="primary">
-                                                    <InputLabel htmlFor="outlined-VocabLevel-native-simple">Vocabulary Level</InputLabel>
+                                                    <InputLabel htmlFor="outlined-SynonymLevel-native-simple">Vocabulary Level</InputLabel>
                                                     <Select
                                                     native
-                                                    value={this.state.VocabLevel}
+                                                    value={this.state.SynonymLevel}
                                                     onChange={this.HandleChange}
-                                                    label="VocabLevel"
+                                                    label="SynonymLevel"
                                                     inputProps={{
                                                         name: 'VocabLevel',
-                                                        id: 'outlined-VocabLevel-native-simple',
+                                                        id: 'outlined-SynonymLevel-native-simple',
                                                     }}
                                                     style={{
                                                         //height: "45px",
@@ -192,75 +246,77 @@ class Vocabulary extends Component
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Vocabulary Description</td>
+                                    <td>Synonym Description</td>
                                     <td>
                                         <TextField
-                                            label="Add Vocabulary"
+                                            label="Add Synonym"
                                             variant= "outlined"
-                                            id='VocabName'
-                                            value={this.state.Vocabulary}
+                                            id='SName'
+                                            value={this.state.SName}
                                             onChange={this.HandleChange}
-                                            name="Vocabulary"
-                                            
-                                        />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Meaning</td>
-                                    <td>
-                                        <TextField
-                                            label="Vocabulary Meaning"
-                                            variant= "outlined"
-                                            id='idVocabMeaning'
-                                            value={this.state.VocabMeaning}
-                                            onChange={this.HandleChange}
-                                            name="VocabMeaning"
-                                            
-                                        />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sentence 1</td>
-                                    <td>
-                                        <TextField
-                                            label="Vocabulary Sentence 1"
-                                            variant= "outlined"
-                                            id='idVocabSentence1'
-                                            value={this.state.VocabSentence1}
-                                            onChange={this.HandleChange}
-                                            name="VocabSentence1"
-                                            
-                                        />
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>Sentence 2</td>
-                                    <td>
-                                        <TextField
-                                            label="Vocabulary Sentence 2"
-                                            variant= "outlined"
-                                            id='idVocabSentence2'
-                                            value={this.state.VocabSentence2}
-                                            onChange={this.HandleChange}
-                                            name="VocabSentence2"
+                                            name="SName"
                                             
                                         />
                                     </td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Correct Answer</td>
+                                    <td>Synonym 1</td>
+                                    <td>
+                                        <TextField
+                                            label="Synonym  1"
+                                            variant= "outlined"
+                                            id='idSynonym1'
+                                            value={this.state.Synonym1}
+                                            onChange={this.HandleChange}
+                                            name="Synonym1"
+                                            
+                                        />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Synonym 2</td>
+                                    <td>
+                                        <TextField
+                                            label="Synonym  2"
+                                            variant= "outlined"
+                                            id='idSynonym2'
+                                            value={this.state.Synonym2}
+                                            onChange={this.HandleChange}
+                                            name="Synonym2"
+                                            
+                                        />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Synonym 3</td>
+                                    <td>
+                                        <TextField
+                                            label="Synonym  3"
+                                            variant= "outlined"
+                                            id='idSynonym3'
+                                            value={this.state.Synonym3}
+                                            onChange={this.HandleChange}
+                                            name="Synonym3"
+                                            
+                                        />
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td></td>
                                     <td>
                                         <Button
                                                     style={{
                                                         width:"360px",
                                                     }}
-                                            onClick={this.fnSubmitVocabulary}
+                                            onClick={this.fnSubmitSynonyms}
                                             
 
                                         >
-                                            Submit Vocabulary
+                                            Submit Synonym
                                         </Button>
                                     </td>
                                 </tr>
@@ -273,6 +329,8 @@ class Vocabulary extends Component
                 
             </div>
         )
-    }
+    }    
 }
-export default Vocabulary
+
+export default Synonyms
+
