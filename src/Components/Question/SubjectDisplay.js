@@ -4,6 +4,7 @@ import firebase from '../../services/firebase';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import GridList from '@material-ui/core/GridList';
 import { Table } from '@material-ui/core';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -13,20 +14,17 @@ import TableRow from '@material-ui/core/TableRow';
 import { useHistory } from "react-router-dom";
 import { db } from '../../services/firebase';
 
-import parse from 'html-react-parser';
-
-
-
 import Navbar from '../Navbar';
 import Header from "../Header";
 import Menu from "../Menu";
 
+import logoheader from '../../../src/images/LogoEnglish.png'
+import { Height } from '@material-ui/icons';
 import { FcBusinessman } from 'react-icons/fc';
-import GridList from '@material-ui/core/GridList';
 
 
 
-class SynonymDisplay extends Component
+class SubjectDisplay extends Component
 {
     constructor(props)
     {
@@ -36,21 +34,15 @@ class SynonymDisplay extends Component
         
         
         this.state = {
-            SynonymLevel : "1",
-            SynonymCategory : "1",
-            SName :"",
-            Synonym1:"",
-            Synonym2:"",
-            Synonym3:"",
+            SubjectName :"",
+            
             strErrMessage:"",
-            QRichText : "",
             InputData: []
 
 
         }
         this.fnFetchData();
     }
-
     
     
     fnFetchData() {
@@ -59,7 +51,7 @@ class SynonymDisplay extends Component
         
         //db.collection("Vocabulary").where("uid", "==", localStorage.getItem("g_user_id")).get()  
         
-        db.collection("Synonyms").get()
+        db.collection("Subjects").get()
           .then(querySnapshot => {
               console.log(querySnapshot.docs);
             const InputData = []
@@ -72,49 +64,27 @@ class SynonymDisplay extends Component
       }
         
 
-      render(){
+    render(){
         return(
           <div >
             
-            
             <Menu></Menu>
             <div class="Main_div_content">
-              <div style={{textAlign:"center"}}>
+              <div >
                 <div class="label-heading">
-                      Synonyms
+                      Choose Subject/Chapter
                 </div>
-                <GridList cols={4} style={{alignItems:"center"}}>
+                <div >
+                <GridList cols={3} >
                   
                   {
                             this.state.InputData &&
                             this.state.InputData.map(InputData => {
                               return (
                                 
-                                    <div class="div-Vocaulary">
-                                      <div class="div-Vocaulary-Text">{InputData.SName}</div>
-                                      <div>
-                                        <table>
-                                          <td class="div-Vocaulary-image-td">
-                                            <FcBusinessman class="div-Vocaulary-image"></FcBusinessman>
-                                            
-                                          </td>
-                                          <td class="div-Vocaulary-Meaning-Examples-td">
-                                            <div class="div-Vocaulary-Meaning">{InputData.Synonym1}</div>
-                                            <div class="div-Vocaulary-examples">
-                                              <ul>
-                                                <li>
-                                                  {InputData.Synonym2}
-                                                </li>
-                                                <li>
-                                                  {InputData.Synonym3}
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </td>
-                                        </table>
-
-                                      </div>
-                                      <div class="div-Vocaulary-Footer-Text">https://cleverlyenglish.com</div>
+                                    <div class="div-Subject">
+                                      <div class="div-Subject-Text">{InputData.SubjectName}</div>
+                                      
                                     </div>
                                   
                               )
@@ -126,6 +96,7 @@ class SynonymDisplay extends Component
                 
 
                 </GridList>
+                </div>
 
 
                 
@@ -140,4 +111,4 @@ class SynonymDisplay extends Component
         )
     }
 }
-export default SynonymDisplay
+export default SubjectDisplay

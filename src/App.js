@@ -27,6 +27,8 @@ import VocabularyDisplay from './Components/Vocabulary/VocabularyDisplay';
 import QuestionDisplay from './Components/Question/QuestionDisplay';
 import LoginRegister from './Components/LoginRegister/LoginRegister';
 
+import SubjectDisplay from './Components/Question/SubjectDisplay'
+
 
 /*Question Mgmt */
 import Question from './Components/Admin/QS/Question';
@@ -59,9 +61,12 @@ function App() {
           
           <Route path="/LoginRegister" exact component={LoginRegister} />
 
+          <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
+          <Route path="/SubjectDisplay" exact component={SubjectDisplay} />
+          
+
           
           <Route path="/VocabularyDisplay" exact component={VocabularyDisplay} />
-          <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
           <Route path="/SynonmsDisplay" exact component={SynonymDisplay} />
 
           

@@ -94,8 +94,7 @@ class VocabularyDisplay extends Component
     render(){
         return(
           <div >
-            <Navbar></Navbar>
-            <Header></Header>
+            
             <Menu></Menu>
             <div class="Main_div_content">
               <div style={{textAlign:"center"}}>

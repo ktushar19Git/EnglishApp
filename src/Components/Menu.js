@@ -92,6 +92,9 @@ function Menu()
                 <div class="SubMenu">
                     <ul >
                         <li>
+                            <a href="SubjectDisplay">Practice Questions by Subject</a>
+                        </li>
+                        <li>
                             <a href="QuestionDisplay">Practice Questions</a>
                         </li>
                     </ul>
