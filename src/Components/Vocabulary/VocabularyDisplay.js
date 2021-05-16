@@ -4,6 +4,7 @@ import firebase from '../../services/firebase';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import GridList from '@material-ui/core/GridList';
 import { Table } from '@material-ui/core';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -18,6 +19,8 @@ import Header from "../Header";
 import Menu from "../Menu";
 
 import logoheader from '../../../src/images/LogoEnglish.png'
+import { Height } from '@material-ui/icons';
+import { FcBusinessman } from 'react-icons/fc';
 
 
 class VocabularyDisplay extends Component
@@ -95,60 +98,55 @@ class VocabularyDisplay extends Component
             <Header></Header>
             <Menu></Menu>
             <div class="Main_div_content">
-              <div>
+              <div style={{textAlign:"center"}}>
                 <div class="label-heading">
-
+                      Vocaubulary
                 </div>
-                <Grid item xs={12} style={{alignItems:'center'}}>
-                  <Paper style={{alignItems:'center'}}>
-                    <td class="tdHalf">
-                      <h3 style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Existing Data</h3>
-                      <Table aria-label=" table" size="small" >
-                        <TableHead>
-                          <TableRow>
-                            
-
-                          </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {
+                <GridList cols={4} style={{alignItems:"center"}}>
+                  
+                  {
                             this.state.InputData &&
                             this.state.InputData.map(InputData => {
                               return (
-                                <TableRow key={InputData.name}>
-                                  <TableCell align="center" >
+                                
                                     <div class="div-Vocaulary">
                                       <div class="div-Vocaulary-Text">{InputData.Vocabulary}</div>
-                                      <div class="div-Vocaulary-Meaning">{InputData.VocabMeaning}</div>
                                       <div>
-                                        <img src={logoheader} ></img>
-                                      </div>
+                                        <table>
+                                          <td class="div-Vocaulary-image-td">
+                                            <FcBusinessman class="div-Vocaulary-image"></FcBusinessman>
+                                            
+                                          </td>
+                                          <td class="div-Vocaulary-Meaning-Examples-td">
+                                            <div class="div-Vocaulary-Meaning">{InputData.VocabMeaning}</div>
+                                            <div class="div-Vocaulary-examples">
+                                              <ul>
+                                                <li>
+                                                  {InputData.VocabSentence1}
+                                                </li>
+                                                <li>
+                                                  {InputData.VocabSentence2}
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </td>
+                                        </table>
 
-                                      <div class="div-Vocaulary-examples">
-                                        <ul>
-                                          <li>
-                                            {InputData.VocabSentence1}
-                                          </li>
-                                          <li>
-                                            {InputData.VocabSentence2}
-                                          </li>
-                                        </ul>
                                       </div>
                                     </div>
-                                  </TableCell>  
-
                                   
-                                </TableRow>
                               )
                             })
 
                           }
 
-                        </TableBody>
-                      </Table>
-                    </td>
-                  </Paper>
-                </Grid>
+                  
+                
+
+                </GridList>
+
+
+                
                 <div class="label-heading">
 
                 </div>

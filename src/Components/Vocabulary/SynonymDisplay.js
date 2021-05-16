@@ -13,6 +13,10 @@ import TableRow from '@material-ui/core/TableRow';
 import { useHistory } from "react-router-dom";
 import { db } from '../../services/firebase';
 
+import parse from 'html-react-parser';
+
+
+
 import Navbar from '../Navbar';
 import Header from "../Header";
 import Menu from "../Menu";
@@ -101,7 +105,7 @@ class SynonymDisplay extends Component
                                   <TableCell align="left" >{InputData.Synonym1}</TableCell>
                                   <TableCell align="left" >{InputData.Synonym2}</TableCell>
                                   <TableCell align="left" >{InputData.Synonym3}</TableCell>
-                                  <TableCell align="left" >{InputData.QRichText}</TableCell>
+                                  <TableCell align="left" >{parse(InputData.QRichText)}</TableCell>
 
                                 </TableRow>
                               )
