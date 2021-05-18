@@ -520,7 +520,7 @@
     
 }
 .CE-logo{
-	background-image: url("/src/images/Logo.jpg");
+	background-image: url("images/logo.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

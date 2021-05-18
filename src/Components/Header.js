@@ -1,5 +1,5 @@
 import React from 'react'
-import logoheader from '../images/Logo.jpg'
+//import logoheader from '../images/Logo.jpg'
 import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
