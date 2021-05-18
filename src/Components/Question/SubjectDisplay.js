@@ -55,7 +55,9 @@ class SubjectDisplay extends Component
           .then(querySnapshot => {
               console.log(querySnapshot.docs);
             const InputData = []
+            
             querySnapshot.forEach(doc => {
+              
               const data = doc.data()
               InputData.push(data)
             });
