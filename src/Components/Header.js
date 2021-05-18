@@ -16,7 +16,8 @@ function Header()
     return(
 
     <div style={{textAlign:'left',}} >
-                <Avatar src={logoheader} class="Headericoninfo"></Avatar>
+                <div class="CE-logo"></div>
+                
                 
                 <a href="LoginRegister" style={{textAlign:'right',width:'100%',paddingLeft:'500px'}}>Login/Register</a>   
                 <a href="Subject" style={{textAlign:'right',width:'100%',paddingLeft:'20px'}}>Admin Panel</a>   

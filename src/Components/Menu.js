@@ -10,6 +10,9 @@ function Menu()
     <div class="Menu">
          
         <ul >
+            <li>
+                <div class="CE-logo"></div>
+            </li>
             
             <li><a>Grammar</a>
                 <div class="SubMenu">
@@ -65,7 +68,7 @@ function Menu()
                 </div>
             </li>
 
-            <li>Punctuation</li>
+            
             <li><a>Vocabulary</a>
                 <div class="SubMenu">
                     <ul >

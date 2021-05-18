@@ -513,9 +513,22 @@
 }
 .Headericoninfo
 {
-    width: 150px;
-    height: 150px;
-    
+    width: 10%;
+    height: 10%;
     margin: 10px;
+    border-radius: 50px;
     
+}
+.CE-logo{
+	background-image: url("/src/images/Logo.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transform: translate(60%, -15%);
+  z-index: 1;
+  width: 122px;
+  height: 115px;
+  background-color: #fff;
+  border-radius: 70px;
 }
