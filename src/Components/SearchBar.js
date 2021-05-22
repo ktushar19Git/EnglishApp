@@ -53,10 +53,11 @@ export default function SearchBar() {
                     </div>                                            
                     
                     <div>
-                    <Button color="primary" id="regmenu-btn" variant="outlined"
+                    <Button  id="regmenu-btn" 
                                         style={{
                                           padding: "0px 10px 0px 0px !important",
                                           width: "280px !important",
+                                          color:'white',
                                         }} onClick={() => {
                 onLoginPage();
               }}><ExitToAppIcon></ExitToAppIcon>Login</Button>
