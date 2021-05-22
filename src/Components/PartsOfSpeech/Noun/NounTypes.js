@@ -28,28 +28,53 @@ function NounTypes() {
                     <div class="section-inner-box">
                         <Grid container>
                                 <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp">
+                                    <div class="bg-blue Normal-mp color-white font-bold">
                                         Common Nouns
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp">
+                                    <div class="bg-blue Normal-mp color-white font-bold">
                                         Concrete Nouns
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp">
+                                    <div class="bg-blue Normal-mp color-white font-bold">
                                         Proper Nouns
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp">
+                                    <div class="bg-blue Normal-mp color-white font-bold">
                                         Abstract Nouns
                                     </div>
                                 </Grid>
                                 
                             </Grid>
+
+                            <Grid container>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                        Collective Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                        Coumpund Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                        Countable Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                        Un-Countable Nouns
+                                    </div>
+                                </Grid>
+                                
+                            </Grid>
                         </div>
+                        
 
                     <ul class="un_ordered_list">
                         
