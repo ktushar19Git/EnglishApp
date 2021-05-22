@@ -588,7 +588,7 @@ h3.logotitle {
 	padding: 5px 0px;
 }
 .top-searchbar{
-	background-color: green;
+	background-color: rgba(0, 128, 0, 0.897);
 	height: 35px;
     display: inherit;
 }
