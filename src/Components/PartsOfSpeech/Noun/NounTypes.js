@@ -30,21 +30,36 @@ function NounTypes() {
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Common Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#ComNoun">Learn More..</a>
+                                        </div>
                                     </div>
+                                    
+                                        
+                                    
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Concrete Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#ConcreteNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Proper Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#PropNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Abstract Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#AbsNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 
@@ -54,21 +69,33 @@ function NounTypes() {
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Collective Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#CollNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Coumpund Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#CompNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Countable Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#CountNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={3} >
                                     <div class="bg-blue Normal-mp color-white font-bold">
                                         Un-Countable Nouns
+                                        <div class="Normal-mp-5px">
+                                            <a class="link" href="#UncountNoun">Learn More..</a>
+                                        </div>
                                     </div>
                                 </Grid>
                                 
@@ -76,37 +103,11 @@ function NounTypes() {
                         </div>
                         
 
-                    <ul class="un_ordered_list">
-                        
-                        <li>
-                            <a href="#ComNoun">Common Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#ConcreteNoun">Concrete Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#PropNoun">Proper Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#AbsNoun">Abstaract Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#CollNoun">Collective Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#CompNoun">Compound Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#CountNoun">Countable Nouns</a>
-                        </li>
-                        <li>
-                            <a href="#UncountNoun">Un-countable Nouns</a>
-                        </li>
-                    </ul>
+                    
 
                     <div id="ComNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-blue">Common Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Common Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Common Nouns</span> are generic names given to people, places and some things, there are not specific in any  way.
                             <ul>
                                 <li>Common nouns are generic and aren't specific so they are never capitalized unless if it's at the start of a sentence.</li>
@@ -126,8 +127,8 @@ function NounTypes() {
                     </div>
 
                     <div id="ConcreteNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-blue">Concrete Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Concrete Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Concrete Nouns</span> can be detected and felt by our five senses (See, Hear, Touch, Smell and Taste).
                             <ul>
                                 <li>Concrete Nouns are very similiar to common nouns, there isn't a big difference between common and Concrete Nouns.</li>
@@ -145,8 +146,8 @@ function NounTypes() {
                     </div>
 
                     <div id="PropNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-maroon">Proper Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Proper Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Proper Nouns</span> are specific names for paticular people, places and some things.
                             <ul>
                                 <li>They always start with a capital letter no matter where they fall in a sentence.</li>
@@ -162,8 +163,8 @@ function NounTypes() {
                     </div>
 
                     <div id="AbsNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-purple">Abstract Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Abstract Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Abstract Nouns</span> are things you can’t see, hear, touch, smell or taste, like emotions or ideas.
                             <ul>
                                 <li>Abstract Nouns don't exist in real life but it is imaginable and it is a thing.</li>
@@ -182,8 +183,8 @@ function NounTypes() {
                     </div>
 
                     <div id="CollNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-purple">Collective Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Collective Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Collective Nouns</span> are words referring to a group of things.
                             <ul>
                                 <li>A Collective Noun takes a Common Noun and makes it a collection of things.</li>
@@ -202,8 +203,8 @@ function NounTypes() {
                     </div>
 
                     <div id="CompNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-blue">Compound Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Compound Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Compound Nouns</span> are words made with two or more words put together.
                             <ul>
                                 <li>To make a Compound Noun, there are all sorts of combinations like, <span>[noun + noun]</span> or <span>[adjective + noun]</span> and so many more.</li>
@@ -226,8 +227,8 @@ function NounTypes() {
                     </div>
 
                     <div id="CountNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-blue">Countable Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Countable Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Countable Nouns</span> are things that can be counted. They can either be singular or plural.
                             <ul>
                                 <li>There can be either an 'a' or 'an' before the (singular) countable noun.</li>
@@ -253,8 +254,8 @@ function NounTypes() {
                     </div>
 
                     <div id="UncountNoun" class="div_sub_section_item">
-                        <div class="label-sub-heading-item color-blue">Un-countable Nouns</div>
-                        <div class="internal_text">
+                        <div class="label-sub-heading-item font-bold bg-teal">Un-countable Nouns</div>
+                        <div class="internal_text bg-white">
                             <span>Un-countable Nouns</span> are things that aren't possible to be counted.
                             <ul>
                                 <li>It is impossible for an Un-countable Noun to have a plural form, they are always singular.</li>

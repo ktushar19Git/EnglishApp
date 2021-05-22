@@ -540,7 +540,7 @@
 }
 .bg-banner
 {
-  background-image: url("images/bg-banner.png");
+  background-image: url("images/bg-banner.svg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -552,7 +552,7 @@
   */
 }
 .CE-logo{
-	background-image: url("images/logo.jpg");
+	background-image: url("images/logo.svg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -746,6 +746,12 @@ h3.logotitle {
 {
   padding:10px;
   margin: 10px;
+
+}
+.Normal-mp-5px
+{
+  padding:5px;
+  margin: 5px;
 
 }
 .color-white{
