@@ -6,13 +6,13 @@ function Menu()
 
 {
     return (
-
+    
+        
+    
     <div class="Menu">
          
         <ul >
-            <li>
-                <div class="CE-logo"></div>
-            </li>
+            
             
             <li><a>Grammar</a>
                 <div class="SubMenu">
@@ -107,6 +107,9 @@ function Menu()
         </ul>
 
     </div>
+
+
+    
     )
 
 } 

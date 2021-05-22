@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component}  from 'react'
 
 import firebase from '../../services/firebase';
 
@@ -14,6 +14,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import { useHistory } from "react-router-dom";
 import { db } from '../../services/firebase';
+import firestore from 'firebase'
 
 import Navbar from '../Navbar';
 import Header from "../Header";
@@ -28,6 +29,7 @@ class QuestionDisplay extends Component
         super(props);
         
         this.fnFetchData = this.fnFetchData.bind(this);
+        this.fnfetchCurrentData = this.fnfetchCurrentData.bind(this);
         
         this.state = {
           QuestionName :"",
@@ -36,11 +38,14 @@ class QuestionDisplay extends Component
           Answer3Name:"",
           Answer4Name:"",
           CorrectAnswer:"",
-            InputData: []
+            InputData: [],
+            CurrentQuestion:[],
+            querySnapshot:[],
 
 
         }
         this.fnFetchData();
+        //this.fnfetchCurrentData();
     }
     
     fnFetchData() {
@@ -49,16 +54,48 @@ class QuestionDisplay extends Component
         
         //db.collection("Vocabulary").where("uid", "==", localStorage.getItem("g_user_id")).get()  
         
-        db.collection("Questions").get()
+        db.collection("Questions").limit(1).get()
           .then(querySnapshot => {
               console.log(querySnapshot.docs);
-            const InputData = []
-            querySnapshot.forEach(doc => {
-              const data = doc.data()
-              InputData.push(data)
-            });
-            this.setState({InputData: InputData})
+              
+            
+              
+              const InputData = []
+
+              //console.log(querySnapshot.doc.slice(1,2));
+              //console.log(querySnapshot.docs.length);
+
+              querySnapshot.forEach(doc => {
+                const data = doc.data()
+                InputData.push(data)
+              });
+              this.setState({InputData: InputData})
+              
           });
+      }
+
+      fnfetchCurrentData()
+      {
+        let TotalRecords = this.state.InputData.length;
+        console.log("Records:",TotalRecords);
+        
+
+        let TemperatureArray =  [];
+
+            {
+                this.state.InputData &&
+                this.state.InputData.map(InputData=> {
+                    TemperatureArray.push(InputData);
+                })
+              
+            }
+
+            console.log("Temp Array"+ TemperatureArray);
+
+        
+        this.setState({CurrentQuestion:TemperatureArray.slice(1,3)});
+        console.log("FInal State"+ this.state.CurrentQuestion);
+        alert(this.state.CurrentQuestion);
       }
         
 
@@ -72,7 +109,7 @@ class QuestionDisplay extends Component
                 <div class="label-heading">
 
                 </div>
-                <Grid item xs={8}>
+                <Grid item xs={12} style={{textAlign:'center',}}>
                   <Paper >
                     <td style={{width:'100%',}}>
                       <h3 style={{ paddingBottom: "15px", color: "#034e9f", fontsize: "x-large", }}>Existing Questions</h3>
@@ -94,15 +131,7 @@ class QuestionDisplay extends Component
                                       <div class="div-Answer">{InputData.Answer3}</div>
                                       <div class="div-Answer">{InputData.Answer4}</div>
                                       <div class="div-Answer">{InputData.CorrectAnswer}</div>
-                                      <div>
-                                            <Button
-                                              style={{
-                                                width:"360px",
-                                              }}
-                                            >
-                                            <ExitToAppIcon></ExitToAppIcon>Submit
-                                          </Button>
-                                      </div>
+                                      
                                     </div>
                                   </TableCell>
                                 </TableRow>
@@ -119,6 +148,18 @@ class QuestionDisplay extends Component
                     
                   </Paper>
                 </Grid>
+                <div>
+                      <div>
+                            <Button
+                              style={{
+                                width:"360px",
+                                backgroundColor:'green',
+                              }}
+                            >
+                            <ExitToAppIcon></ExitToAppIcon>Submit
+                          </Button>
+                      </div>
+                </div>
                 <div class="label-heading">
 
                 </div>

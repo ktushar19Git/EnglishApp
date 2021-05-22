@@ -1,7 +1,7 @@
 .div-QuestionTemplate
 {
     border-radius: 20px;
-    border:40px solid black;
+    border:0px solid black;
 }
 .div-Question{
     margin: 20px;
@@ -9,12 +9,14 @@
     /*background-image: linear-gradient(to right, #00C9FF, #00C9FF);*/
     font-weight:bolder;
     color: brown;
+    background-color: lightskyblue;
     
 }
 .div-Answer{
     margin: 10px;
     padding: 5px;
-    padding-left: 20px;
+    padding-left: 40px;
+    font-weight: bold;
     
 }
 .div-Subject
