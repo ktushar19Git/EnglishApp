@@ -4,6 +4,7 @@ import * as TiGroup from "react-icons/ti";
 import Button from '@material-ui/core'
 import AccessibleIcon from '@material-ui/icons/Accessible';
 import headingbullet from '../../../images/righthand.jpg'
+import {GiMagnifyingGlass} from 'react-icons/gi';
 
 
 
@@ -15,46 +16,19 @@ function AdverbTypes() {
             <img src={headingbullet}></img>
                 Types of Conjunctions
             </div>
-            
-            <div class="list_div">
-                <p>Following are the types of Conjunctions based on their uses.</p>
-                <ul class="un_ordered_list">
-                    <li>
-                        <a href="#AttrAdj">Attrubite Adjective</a>
-                    </li>
-                    <li>
-                        <a href="#PrdAdj">Predicate Adjective</a>
-                    </li>
-                    <li>
-                        <a href="#CompAdj">Coumpound Adjective</a>
-                    </li>
 
+            <div>
+                <ul class="Exp_items">
+                    <li class="og_header Exp_list_item"> <GiMagnifyingGlass class="icon_style"></GiMagnifyingGlass> Coordinating Conjuntions
+                        <div class="og_typing">
+                            
+                        </div>
+                        
+                    </li>
+                    <li class="og_header Exp_list_item"> <GiMagnifyingGlass class="icon_style"></GiMagnifyingGlass> Subordinating Conjunctions</li>
+                    <li class="og_header Exp_list_item"> <GiMagnifyingGlass class="icon_style"></GiMagnifyingGlass> Correlative Conjunctions</li>
+                    <li class="og_header Exp_list_item"> <GiMagnifyingGlass class="icon_style"></GiMagnifyingGlass> Compound Conjunctions</li>
                 </ul>
-            </div>
-
-            <div id="AttrAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Attribute Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
-            </div>
-            <div id="PrdAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Predicate Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
-            </div>
-            <div id="CompAdj" class="MarginNormal">
-                <div class="label-sub-heading">
-                    Coumpound Adjective
-                </div>
-                <div class="Content_sub_desc">
-                                This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective. This is Attribute ADjective.
-                </div>
             </div>
 
         </div>
