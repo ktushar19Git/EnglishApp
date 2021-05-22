@@ -3,7 +3,7 @@
   text-align: left;
   color: #1261A0 ;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 10px;
+  margin-left: 0px;
   font-weight: bolder;
   background-color: transparent;
   margin-top: 5px;
@@ -15,14 +15,15 @@
 }
 .label-heading
 {
-  text-align: left;
   color: #1261A0 ;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 10px;
+  margin-left: 0px;
   font-weight: bolder;
+  font-size: larger;
   
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
   
 }
 .label-heading:hover

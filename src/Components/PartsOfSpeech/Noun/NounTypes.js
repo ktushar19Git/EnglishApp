@@ -3,12 +3,13 @@ import * as TiGroup from "react-icons/ti";
 
 import Button from '@material-ui/core'
 import AccessibleIcon from '@material-ui/icons/Accessible';
+import Grid from '@material-ui/core/Grid';
 
 
 function NounTypes() {
     return (
 
-        <div>
+        <div class="section-outer-box">
             <div class="label-heading">
                 <AccessibleIcon></AccessibleIcon>
                 Types of Nouns
@@ -17,13 +18,39 @@ function NounTypes() {
                 Nouns are classified into multiple types based on their uses. Following are some types of nouns
             </div>
 
-            <div class="div_sub_section">
+            <div class="section-inner-box">
                 <div class="label-sub-heading">
                     Types of Nouns
                 </div>
 
                 <div class="list_div">
                     <p>As you can see, Below are the types of Nouns based on their uses"</p>
+                    <div class="section-inner-box">
+                        <Grid container>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp">
+                                        Common Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp">
+                                        Concrete Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp">
+                                        Proper Nouns
+                                    </div>
+                                </Grid>
+                                <Grid item xs={12} sm={3} >
+                                    <div class="bg-blue Normal-mp">
+                                        Abstract Nouns
+                                    </div>
+                                </Grid>
+                                
+                            </Grid>
+                        </div>
+
                     <ul class="un_ordered_list">
                         
                         <li>

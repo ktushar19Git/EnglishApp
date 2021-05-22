@@ -53,7 +53,13 @@ function Header()
                         <Menu></Menu>
                       </Grid>
                     </Grid>
-        </div>  
+                </div>
+                <div>
+                  <Grid item xs={12} sm={12}>
+                          <div class="bg-banner">
+                            </div>
+                  </Grid>
+                </div>  
                 
                 
                 

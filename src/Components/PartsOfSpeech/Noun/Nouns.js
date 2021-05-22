@@ -6,6 +6,11 @@ import { FaHandMiddleFinger } from 'react-icons/fa';
 import Navbar from '../../Navbar';
 import Header from "../../Header";
 import Menu from "../../Menu";
+import Grid from '@material-ui/core/Grid';
+import { ImNext } from 'react-icons/im';
+import { FcNext } from 'react-icons/fc';
+import {GrNext} from 'react-icons/gr'
+import {GoTriangleRight} from 'react-icons/go'
 
 function Nouns()
 
@@ -16,29 +21,37 @@ function Nouns()
             <Header></Header>
             <div class="Main_div_content">
                 <div>
-                    <div class="label-heading">
 
-                    </div>
-                    <table class="FullTable">
-                        <tr>
-                            <td class="Def_title">
+                    
+                    <div class="section-outer-box">
+                        <Grid container>
+                            <Grid item xs={12} sm={5} >
                                 <div>
-                                    Nouns<DoubleArrowIcon style={{ verticalAlign: 'middle', }}></DoubleArrowIcon>
-                                </div>
-                            </td>
-                            <td >
-                                <div class="Def_details">
-                                    <p>Nouns are naming words for people,animals and places</p>
+                                    <div class="Def-Title">
+                                        Nouns <GoTriangleRight class="Def-Title-Next-Icon"></GoTriangleRight>
+                                        
+                                    </div>
+                                    <div class="Def-Details-Outer">
+                                        <div class="Def-Inner-Title">
+                                            <p>Nouns are naming words for people,animals and places</p>
 
-                                </div>
-                                <div class="Def_details_desc">
-                                    <p>Nouns are often known as "naming" words. Every sentence must include at least one noun or pronoun. Most nouns can be either singular or plural, and can be devided into two main groups: common and propoer nouns</p>
+                                        </div>
+                                        <div class="Def_inner-desc">
+                                            <p>Nouns are often known as "naming" words. Every sentence must include at least one noun or pronoun. Most nouns can be either singular or plural, and can be devided into two main groups: common and propoer nouns</p>
 
+                                        </div>
+                                    </div>
                                 </div>
-
-                            </td>
-                        </tr>
-                    </table>
+                            </Grid>
+                            <Grid item xs={12} sm={7} >
+                                <div class="Nouns-logo">
+                                
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </div>
+                    
+                    
                 </div>
 
                 <div>

@@ -4,6 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import { FiPhoneCall } from "react-icons/fi";
 import { BsEnvelope } from "react-icons/bs";
 import { ImSearch} from "react-icons/im";
+import Button from '@material-ui/core/Button';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
      title:{
@@ -31,6 +34,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function SearchBar() {
     const classes = useStyles();
+    const history = useHistory();
+
+    async function onLoginPage() {
+    
+        history.push("/LoginRegister");
+      
+    }
+
     return (
         <div>
             <AppBar position="static">
@@ -40,9 +51,15 @@ export default function SearchBar() {
                         <FiPhoneCall fontSize="large"/>
                         <Typography className={classes.title}>Call Us +91 9108705205</Typography>
                     </div>                                            
-                    <div class="email">
-                        <BsEnvelope fontSize="large"/>
-                        <Typography className={classes.title} > sales@digi-crop.com</Typography>
+                    
+                    <div>
+                    <Button color="primary" id="regmenu-btn" variant="outlined"
+                                        style={{
+                                          padding: "0px 10px 0px 0px !important",
+                                          width: "280px !important",
+                                        }} onClick={() => {
+                onLoginPage();
+              }}><ExitToAppIcon></ExitToAppIcon>Login</Button>
                     </div>                
                     <div class="search" style={{position:"relative"}}>
                             <div className={classes.searchIcon}>
