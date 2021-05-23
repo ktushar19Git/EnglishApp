@@ -70,7 +70,7 @@ class SubjectDisplay extends Component
         return(
           <div >
             
-            <Menu></Menu>
+            <Header></Header>
             <div class="Main_div_content">
               <div >
                 <div class="label-heading">

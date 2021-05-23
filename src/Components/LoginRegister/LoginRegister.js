@@ -60,7 +60,7 @@ class LoginRegister extends Component
         return(
           <div >
             
-            <Menu></Menu>
+            <Header></Header>
             <div class="Main_div_content">
               <div style={{textAlign:'center',verticalAlign:'center',}}>
                 <div class="label-heading">

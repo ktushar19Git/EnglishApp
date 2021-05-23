@@ -95,7 +95,7 @@ class VocabularyDisplay extends Component
         return(
           <div >
             
-            <Menu></Menu>
+            <Header></Header>
             <div class="Main_div_content">
               <div style={{textAlign:"center"}}>
                 <div class="label-heading">
