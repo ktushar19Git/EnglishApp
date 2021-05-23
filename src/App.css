@@ -761,7 +761,7 @@ h3.logotitle {
 }
 .Examples-Outer
 {
-  background-color: rgb(8, 8, 8);
+  background-color: white;
   
   padding:10px;
   text-align: left;
@@ -806,7 +806,6 @@ h3.logotitle {
   margin: 5px;
 
 }
-
 .font-bold
 {
   font-weight: bold;
