@@ -48,7 +48,7 @@ export default function SearchBar() {
                 <Toolbar class="top-searchbar"> 
                     <div style={{display: "inherit",  transform: "translate(100%, 2%)"}}>
                     <div class="phone">
-                        <FiPhoneCall fontSize="large"/>
+                        
                         <Typography className={classes.title}>Call Us +91 9108705205</Typography>
                     </div>                                            
                     

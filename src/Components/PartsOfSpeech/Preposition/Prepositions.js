@@ -8,6 +8,7 @@ import Header from "../../Header";
 import Menu from "../../Menu";
 import Grid from '@material-ui/core/Grid';
 import { GoTriangleRight } from 'react-icons/go'
+import Footer from '../../Footer';
 
 function Prepositions() {
     return (
@@ -56,8 +57,8 @@ function Prepositions() {
                     <PrepositionTypes></PrepositionTypes>
 
                 </div>
-                <div class="label-heading">
-
+                <div>
+                    <Footer></Footer>
                 </div>
 
             </div>

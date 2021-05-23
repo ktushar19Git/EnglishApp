@@ -601,10 +601,9 @@
 {
   background-image: url("images/bg-banner.svg");
 	background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: 1;
-  height: 200px;
+  height: 75px;
+  
   
   /*
   background-color: #034e9f;
@@ -618,10 +617,14 @@
   position: relative;
   transform: translate(20%, -20%);
   z-index: 1;
+  height: 185%;
+  width: 110%;
+  /*
   width: 125px;
-  height: 115px;
+  height: 115px;*/
   
-  border-radius: 70px;
+  
+  
   /*
   background-color: #034e9f;
   */
@@ -674,9 +677,12 @@ h3.logotitle {
 	padding: 5px 0px;
 }
 .top-searchbar{
-	background-color: #034e9f;
-	height: 35px;
+	
+  background-image: linear-gradient(to right, #ad5389, navy);
+	
     display: inherit;
+    
+    padding: 5px;
 }
 .section-outer-box
 {
@@ -826,4 +832,18 @@ h3.logotitle {
 .font-bold
 {
   font-weight: bold;
+}
+.Footer-main-box
+{
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px; 
+}
+.Footer-inner-box
+{
+  padding-left: 0px;
+  padding-top: 20px;
+  margin-bottom: 10px;  
 }

@@ -11,6 +11,7 @@ import { ImNext } from 'react-icons/im';
 import { FcNext } from 'react-icons/fc';
 import { GrNext } from 'react-icons/gr'
 import { GoTriangleRight } from 'react-icons/go'
+import Footer from '../../Footer';
 
 function Nouns() {
     return (
@@ -61,8 +62,8 @@ function Nouns() {
                     <NounTypes></NounTypes>
 
                 </div>
-                <div class="label-heading">
-
+                <div>
+                    <Footer></Footer>
                 </div>
 
             </div>

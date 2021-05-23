@@ -11,6 +11,7 @@ import ReactPlayer from 'react-player'
 
 import Grid from '@material-ui/core/Grid';
 import { GoTriangleRight } from 'react-icons/go'
+import Footer from '../../Footer';
 
 function ProNouns() {
     return (
@@ -75,6 +76,9 @@ function ProNouns() {
                         <ReactPlayer url={PronounMp4} controls="true"></ReactPlayer>
                     </div>
 
+                </div>
+                <div>
+                    <Footer></Footer>
                 </div>
 
 

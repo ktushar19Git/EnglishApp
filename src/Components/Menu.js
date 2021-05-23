@@ -98,26 +98,7 @@ function Menu()
                 </div>
             </li>
 
-            <li><a>Spelling</a>
-                <div class="SubMenu">
-                    <ul>
-                        <li>Spelling</li>
-                        <li>ProNouns</li>
-                        <li>Addjectives</li>
-                        <li>Verbs</li>
-                    </ul>
-                </div>
-            </li>
-            <li><a>Punctuation</a>
-                <div class="SubMenu">
-                    <ul >
-                        <li>Basic Punctuation</li>
-                        <li>Commas</li>
-                        <li>Colons and semi-colons</li>
-                        <li>Exclamation marks</li>
-                    </ul>
-                </div>
-            </li>
+            
 
             
             <li><a>Vocabulary</a>
@@ -154,7 +135,7 @@ function Menu()
                     </ul>
                 </div>
             </li>
-            <li>Article</li>
+            <li><a>Article</a></li>
         </ul>
 
     </div>
