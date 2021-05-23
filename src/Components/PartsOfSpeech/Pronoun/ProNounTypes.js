@@ -10,7 +10,7 @@ import headingbullet from '../../../images/righthand.jpg'
 function ProNounTypes() {
     return (
 
-        <div class="EndofSection">
+        <div class="section-outer-box bg-white">
             <div class="label-heading">
                 <img src={headingbullet}></img>
                 Types of Nouns
@@ -19,7 +19,7 @@ function ProNounTypes() {
                 Pronouns are divided into various different types and all have their own uses. Following are six types of pronouns:
             </div>
 
-            <div class="table_div">
+            <div class="section-inner-box">
             <div class="table_type_3">
                     <table>
                         <tr>

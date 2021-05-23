@@ -18,29 +18,80 @@ function Menu()
                 <div class="SubMenu">
                     <ul >
                         <li>
-                            <a href="Nouns">Nouns</a>
+                            <a href="Nouns">Parts Of Speech</a>
+                                <div class="SubMenu-1">
+                                    <ul>
+                                        <li>
+                                            <a href="Nouns">Nouns</a>
+                                        </li>
+                                        <li>
+                                            <a href="ProNouns">Pronouns</a>
+                                        </li>
+                                        <li>
+                                            <a href="Adjectives">Adjectives</a>
+                                        </li>
+                                        <li>
+                                            <a href="Verbs">Verbs</a>
+                                        </li>
+                                        <li>
+                                            <a href="Adverbs">Adverbs</a>
+                                        </li>
+                                        <li>
+                                            <a href="Prepositions">Prepositions</a>
+                                        </li>
+                                        <li>
+                                            <a href="Conjunctions">Conjunctions</a>
+                                        </li>
+                                        <li>
+                                            <a href="Interjections">Interjections</a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
                         </li>
+
                         <li>
-                            <a href="ProNouns">ProNouns</a>
+                            <a href="Nouns">Figure of Speech</a>
+                            <div class="SubMenu-1">
+                                    <ul>
+                                        <li>
+                                            <a href="Simile">Simile</a>
+                                        </li>
+                                        <li>
+                                            <a href="Metaphor">Metaphor</a>
+                                        </li>
+                                        <li>
+                                            <a href="Personification">Personification</a>
+                                        </li>
+                                        <li>
+                                            <a href="Apostrophe">Apostrophe</a>
+                                        </li>
+                                        <li>
+                                            <a href="Metonymy">Metonymy</a>
+                                        </li>
+                                        <li>
+                                            <a href="Synecdoche">Synecdoche</a>
+                                        </li>
+                                        <li>
+                                            <a href="Onomatopoeia">Onomatopoeia</a>
+                                        </li>
+                                        <li>
+                                            <a href="Alliteration">Alliteration</a>
+                                        </li>
+                                        <li>
+                                            <a href="Assonance">Assonance</a>
+                                        </li>
+                                        <li>
+                                            <a href="Pun">Pun</a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
                         </li>
-                        <li>
-                            <a href="Adjectives">Adjectives</a>
-                        </li>
-                        <li>
-                            <a href="Verbs">Verbs</a>
-                        </li>
-                        <li>
-                            <a href="Adverbs">Adverbs</a>
-                        </li>
-                        <li>
-                            <a href="Prepositions">Prepositions</a>
-                        </li>
-                        <li>
-                            <a href="Conjunctions">Conjunctions</a>
-                        </li>
-                        <li>
-                            <a href="Interjections">Interjections</a>
-                        </li>
+                        
 
                         
                     </ul>

@@ -107,7 +107,7 @@
   /*padding-right: 25px;*/
   background-color: white;
   color: #034e9f;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
 
 }
@@ -177,6 +177,65 @@
 
   border-bottom: none;
 }
+
+.SubMenu-1
+{
+  display: none;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1
+{
+  display: block;
+  position: absolute;
+  /*background: #1261A0;*/
+  /*background-image: linear-gradient(to bottom, #ad5389, #3c1053);*/
+  
+  margin-top: 3px;
+  margin-left: 125px;
+  margin-top: -24px;
+  text-align: left;
+  width: 100%;
+  
+
+}
+
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul
+{
+  display: block;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: #034e9f;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li
+{
+  padding-top: 0px;
+  /*border-bottom: 1px solid orange;*/
+  background: linear-gradient(to right, PowderBlue, PowderBlue);
+  text-align: left;
+  border-radius: 10px;
+  width: 100%;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a
+{
+  color: black;
+  width: 100%;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li:hover
+{
+  /*background-color: #1273c2;*/
+  background-image: linear-gradient(to right, GreenYellow, GreenYellow);
+  color: white;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a:hover
+{
+  /*color: rgb(247, 165, 12) ;*/
+  color: white;
+}
+.Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li:last-child{
+
+  border-bottom: none;
+}
+
+
 .div_header{
 
   margin: 10px;
@@ -702,7 +761,7 @@ h3.logotitle {
 }
 .Examples-Outer
 {
-  background-color: white;
+  background-color: rgb(8, 8, 8);
   
   padding:10px;
   text-align: left;
@@ -724,14 +783,7 @@ h3.logotitle {
   color: white;
   font-weight: bold;
 }
-.bg-teal
-{
-  background-color: Teal;
-}
-.bg-blue
-{
-  background-color: blue;
-}
+
 .examples-section
 {
   margin-right: 10px;
@@ -754,9 +806,7 @@ h3.logotitle {
   margin: 5px;
 
 }
-.color-white{
-  color: white;
-}
+
 .font-bold
 {
   font-weight: bold;

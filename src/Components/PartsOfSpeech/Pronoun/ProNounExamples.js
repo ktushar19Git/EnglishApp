@@ -9,7 +9,7 @@ function ProNounExamples()
 {
     return (
 
-        <div class="EndofSection">
+        <div class="section-outer-box bg-lightgray">
             <div class="label-heading">
                 <img src={headingbullet}></img>Examples of pronouns
             </div>
@@ -22,7 +22,7 @@ function ProNounExamples()
                 <p>Below are some examples to help you understand what exactly are pronouns:</p>
             </div>
 
-            <div class="MarginNormal">
+            <div class="section-inner-box">
                 <div class="label-sub-heading">
                     Subject Pronouns
                 </div>
