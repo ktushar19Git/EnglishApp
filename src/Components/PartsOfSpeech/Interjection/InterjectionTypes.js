@@ -8,7 +8,7 @@ import AccessibleIcon from '@material-ui/icons/Accessible';
 function InterjectionTypes() {
     return (
 
-        <div>
+        <div class="section-outer-box bg-white">
             <div class="label-heading">
                 <AccessibleIcon></AccessibleIcon>
                 Types of Interjections
@@ -17,6 +17,7 @@ function InterjectionTypes() {
                 Nouns are classified into multiple types based on their uses. Following are some types of nouns
             </div>
 
+        <div class="section-inner-box">
             <div class="Types-div-div">
                 
                 <ul>
@@ -79,12 +80,9 @@ function InterjectionTypes() {
                     
                     </li>
 
-                    
-
-
-
                 </ul>
             </div>
+        </div>
 
             <div class="Types-div-div">
                 

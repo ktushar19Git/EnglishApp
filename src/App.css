@@ -260,12 +260,12 @@
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  background: white;
+  background: transparent;
   color: blue;
 }
 .wrapper-div-div
 {
-  background: white;
+  background: transparent;
   text-align: left;
   font-weight: bold;
   
@@ -734,6 +734,22 @@ h3.logotitle {
 }
 .Nouns-logo{
 	background-image: url("images/noun-logo.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+  
+  
+  /*
+  background-color: #034e9f;
+  */
+}
+.Varbs-logo{
+	background-image: url("images/verbs-logo.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

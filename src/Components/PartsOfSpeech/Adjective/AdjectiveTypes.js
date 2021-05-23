@@ -10,13 +10,13 @@ import headingbullet from '../../../images/righthand.jpg'
 function AdjectiveTypes() {
     return (
 
-        <div>
+        <div class="section-outer-box bg-white">
             <div class="label-heading">
             <img src={headingbullet}></img>
                 Types of Ajectives
             </div>
             
-            <div class="list_div">
+            <div class="section-inner-box">
                 <p>Following are the types of Adjectives based on their uses.</p>
                 <ul class="un_ordered_list">
                     <li>

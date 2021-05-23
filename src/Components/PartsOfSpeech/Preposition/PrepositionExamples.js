@@ -3,20 +3,22 @@ import PlaceIcon from '@material-ui/icons/Place';
 import headingbullet from '../../../images/righthand.jpg'
 
 
-function PrepositionExamples()
-
-{
+function PrepositionExamples() {
     return (
 
-        <div class="EndofSection">
+        <div class="section-outer-box bg-lightgray">
             <div class="label-heading">
-               <img src={headingbullet}></img> Examples of Prepositions
+                <img src={headingbullet}></img> Examples of Prepositions
             </div>
             <div class="Content_desc">
                 <p>Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. Adjectives are used describe a noun. </p>
             </div>
 
-            
+            <div class="section-inner-box">
+
+            </div>
+
+
 
 
 
@@ -26,7 +28,7 @@ function PrepositionExamples()
 
         </div>
 
-    
+
     )
 }
 export default PrepositionExamples

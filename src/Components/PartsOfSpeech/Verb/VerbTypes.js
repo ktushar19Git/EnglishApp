@@ -14,39 +14,39 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      width: '100%',
-      alignContent: 'left',
+        width: '100%',
+        alignContent: 'left',
     },
     heading: {
-      fontSize: theme.typography.pxToRem(13),
-      flexBasis: '33.33%',
-      flexShrink: 0,
-      textAlign:'left',
-      color:'red',
-      fontWeight: 'bold',
+        fontSize: theme.typography.pxToRem(13),
+        flexBasis: '33.33%',
+        flexShrink: 0,
+        textAlign: 'left',
+        color: 'red',
+        fontWeight: 'bold',
     },
     secondaryHeading: {
-      fontSize: theme.typography.pxToRem(12),
-      color: theme.palette.text.secondary,
+        fontSize: theme.typography.pxToRem(12),
+        color: theme.palette.text.secondary,
     },
-  }));
-  
+}));
+
 
 
 function VerbTypes() {
 
     const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = React.useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
 
     return (
 
-        <div>
+        <div class="section-outer-box bg-white">
             <div class="label-heading">
-            <img src={headingbullet}></img>
+                <img src={headingbullet}></img>
                 Types of Verbs
             </div>
 
@@ -54,126 +54,128 @@ function VerbTypes() {
                 There are 7 types of Verbs in English. All of them are listed below:
             </div>
 
-            <div className={classes.root}>
-                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1bh-content"
-                        id="panel1bh-header"
-                    >
-                        <Typography className={classes.heading}>Regular Verbs</Typography>
-                        <Typography className={classes.secondaryHeading}></Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-                            maximus est, id dignissim quam.
+            <div class="section-outer-box bg-white">
+                <div className={classes.root}>
+                    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                        >
+                            <Typography className={classes.heading}>Regular Verbs</Typography>
+                            <Typography className={classes.secondaryHeading}></Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
+                                maximus est, id dignissim quam.
                         </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2bh-content"
-                        id="panel2bh-header"
-                    >
-                        <Typography className={classes.heading}>Irregular Verbs</Typography>
-                        <Typography className={classes.secondaryHeading}>
+                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel2bh-content"
+                            id="panel2bh-header"
+                        >
+                            <Typography className={classes.heading}>Irregular Verbs</Typography>
+                            <Typography className={classes.secondaryHeading}>
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
+                                diam eros in elit. Pellentesque convallis laoreet laoreet.
                         </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-                            diam eros in elit. Pellentesque convallis laoreet laoreet.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel3bh-content"
-                        id="panel3bh-header"
-                    >
-                        <Typography className={classes.heading}>Linking Verbs</Typography>
-                        <Typography className={classes.secondaryHeading}>
+                    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel3bh-content"
+                            id="panel3bh-header"
+                        >
+                            <Typography className={classes.heading}>Linking Verbs</Typography>
+                            <Typography className={classes.secondaryHeading}>
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography className={classes.secondaryHeading}>
+                                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                                vitae egestas augue. Duis vel est augue.
                         </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography className={classes.secondaryHeading}>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                            vitae egestas augue. Duis vel est augue.
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel4bh-content"
+                            id="panel4bh-header"
+                        >
+                            <Typography className={classes.heading}>Transitive Verbs</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                                vitae egestas augue. Duis vel est augue.
                         </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography className={classes.heading}>Transitive Verbs</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                            vitae egestas augue. Duis vel est augue.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography className={classes.heading}>Intransitive Verbs</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                            vitae egestas augue. Duis vel est augue.
+                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel4bh-content"
+                            id="panel4bh-header"
+                        >
+                            <Typography className={classes.heading}>Intransitive Verbs</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                                vitae egestas augue. Duis vel est augue.
                         </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography className={classes.heading}>Finite Verbs</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                            vitae egestas augue. Duis vel est augue.
+                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel4bh-content"
+                            id="panel4bh-header"
+                        >
+                            <Typography className={classes.heading}>Finite Verbs</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                                vitae egestas augue. Duis vel est augue.
                         </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
 
-                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4bh-content"
-                        id="panel4bh-header"
-                    >
-                        <Typography className={classes.heading}>Infinite Verbs</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-                            vitae egestas augue. Duis vel est augue.
+                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel4bh-content"
+                            id="panel4bh-header"
+                        >
+                            <Typography className={classes.heading}>Infinite Verbs</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                                vitae egestas augue. Duis vel est augue.
                         </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                        </AccordionDetails>
+                    </Accordion>
+                </div>
             </div>
 
-            
-            
+
+
         </div>
 
 

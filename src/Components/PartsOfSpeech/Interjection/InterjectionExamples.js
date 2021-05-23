@@ -7,14 +7,14 @@ function InterjectionExamples()
 {
     return (
 
-        <div>
+        <div class="section-outer-box bg-lightgray">
             <div class="label-heading">
                 Examples of Interjections
             </div>
             <div class="Content_desc">
                 Nouns are classified into multiple types based on their uses. Following are some types of nouns
             </div>
-
+        <div class="section-inner-box">
             <div class="wrapper-div-div">
                 <ul>
                     <li>
@@ -68,6 +68,7 @@ function InterjectionExamples()
 
                 </ul>
             </div>
+        </div>
 
 
 

@@ -6,40 +6,45 @@ import { FaHandMiddleFinger } from 'react-icons/fa';
 import Navbar from '../../Navbar';
 import Header from "../../Header";
 import Menu from "../../Menu";
+import Grid from '@material-ui/core/Grid';
+import { GoTriangleRight } from 'react-icons/go'
 
-function Prepositions()
-
-{
+function Prepositions() {
     return (
         <div>
-            
+
             <Header></Header>
-            
+
             <div class="Main_div_content">
                 <div>
-                    <div class="label-heading">
 
-                    </div>
-                    <table class="FullTable">
-                        <tr>
-                            <td class="Def_title">
+                    <div class="section-outer-box">
+                        <Grid container>
+                            <Grid item xs={12} sm={5} >
                                 <div>
-                                    Prepositions<DoubleArrowIcon style={{ color: 'white', verticalAlign: 'middle', }}></DoubleArrowIcon>
+                                    <div class="Def-Title">
+                                        Prepositions <GoTriangleRight class="Def-Title-Next-Icon"></GoTriangleRight>
+
+                                    </div>
+                                    <div class="Def-Details-Outer">
+                                        <div class="Def-Inner-Title">
+                                            <p>Prepositions are words or phrases that helps provide more information to a sentence and the words connect to do so, some of them show things such as where something is located.</p>
+                                        </div>
+                                        <div class="Def_inner-desc">
+                                            <p>Prepositions can be words or phrases that connect the nouns, pronouns, phrases together and they help to provide extra information.</p>
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </td>
-                            <td >
-                                <div class="Def_details">
-                                    <p>Prepositions are words or phrases that helps provide more information to a sentence such as where something is located.</p>
+                            </Grid>
+                            <Grid item xs={12} sm={7} >
+                                <div class="Nouns-logo">
 
                                 </div>
-                                <div class="Def_details_desc">
-                                    <p>Prepositions are words or phrases that helps provide more information to a sentence such as where something is located.</p>
+                            </Grid>
+                        </Grid>
+                    </div>
 
-                                </div>
-
-                            </td>
-                        </tr>
-                    </table>
                 </div>
 
                 <div>
@@ -57,9 +62,9 @@ function Prepositions()
 
             </div>
         </div>
-        
+
     )
 
-} 
- 
+}
+
 export default Prepositions

@@ -6,40 +6,56 @@ import { FaHandMiddleFinger } from 'react-icons/fa';
 import Navbar from '../../Navbar';
 import Header from "../../Header";
 import Menu from "../../Menu";
+import Grid from '@material-ui/core/Grid';
+import { GoTriangleRight } from 'react-icons/go'
 
-function Adjectives()
-
-{
+function Adjectives() {
     return (
         <div>
-            
+
             <Header></Header>
-            
+
             <div class="Main_div_content">
                 <div>
-                    <div class="label-heading">
 
-                    </div>
-                    <table class="FullTable">
-                        <tr>
-                            <td class="Def_title">
+                    <div class="section-outer-box">
+                        <Grid container>
+                            <Grid item xs={12} sm={5} >
                                 <div>
-                                    Adjectives<DoubleArrowIcon style={{ color: 'white', verticalAlign: 'middle', }}></DoubleArrowIcon>
+                                    <div class="Def-Title">
+                                        Adjectives <GoTriangleRight class="Def-Title-Next-Icon"></GoTriangleRight>
+
+                                    </div>
+                                    <div class="Def-Details-Outer">
+                                        <div class="Def-Inner-Title">
+                                            <p>Adjectives are words or phrases that modify or describe nouns or pronouns.</p>
+
+                                        </div>
+                                        <div class="Def_inner-desc">
+                                            <p>A noun by itself does not offer much information. If a man wanted to buy a shirt in a shop, he would need to narrow down what he was looking for by using descriptive words like thin or silky. These words are known as adjectives.</p>
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </td>
-                            <td >
-                                <div class="Def_details">
-                                    <p>Adjectives are words or phrases that modify or describe nouns or pronouns.</p>
+                            </Grid>
+                            <Grid item xs={12} sm={7} >
+                                <div class="Nouns-logo">
 
                                 </div>
-                                <div class="Def_details_desc">
-                                    <p>A noun by itself does not offer much information. If a man wanted to buy a shirt in a shop, he would need to narrow down what he was looking for by using descriptive words like thin or silky. These words are known as adjectives.</p>
+                            </Grid>
+                        </Grid>
+                    </div>
 
-                                </div>
 
-                            </td>
-                        </tr>
-                    </table>
+
+
+
+
+
+
+
+
+
                 </div>
 
                 <div>
@@ -57,9 +73,9 @@ function Adjectives()
 
             </div>
         </div>
-        
+
     )
 
-} 
- 
+}
+
 export default Adjectives
