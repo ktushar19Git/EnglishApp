@@ -40,6 +40,19 @@ import Vocabulary from './Components/Admin/Vocabulary/Vocabulary';
 import Synonyms from './Components/Admin/Vocabulary/Synonyms';
 import SynonymDisplay from './Components/Vocabulary/SynonymDisplay';
 
+/*FigureOfSpeech*/
+import Simile from './Components/FigureOfSpeech/Simile';
+import Metaphor from './Components/FigureOfSpeech/Metaphor';
+import Personification from './Components/FigureOfSpeech/Personification';
+import Apostrophe from './Components/FigureOfSpeech/Apostrophe';
+import Metonymy from './Components/FigureOfSpeech/Metonymy';
+import Synecdoche from './Components/FigureOfSpeech/Synecdoche';
+import Onomatopoeia from './Components/FigureOfSpeech/Onomatopoeia';
+import Alliteration from './Components/FigureOfSpeech/Alliteration';
+import Assonance from './Components/FigureOfSpeech/Assonance';
+import Pun from './Components/FigureOfSpeech/Pun';
+
+
 
 
 
@@ -58,6 +71,18 @@ function App() {
           <Route path="/Conjunctions" exact component={Conjunctions} />
           <Route path="/Prepositions" exact component={Prepositions} />
           <Route path="/Interjections" exact component={Interjections} />
+          
+          <Route path="/Simile" exact component={Simile} />
+          <Route path="/Metaphor" exact component={Metaphor} />
+          <Route path="/Personification" exact component={Personification} />
+          <Route path="/Apostrophe" exact component={Apostrophe} />
+          <Route path="/Metonymy" exact component={Metonymy} />
+          <Route path="/Synecdoche" exact component={Synecdoche} />
+          <Route path="/Onomatopoeia" exact component={Onomatopoeia} />
+          <Route path="/Alliteration" exact component={Alliteration} />
+          <Route path="/Assonance" exact component={Assonance} />
+          <Route path="/Pun" exact component={Pun} />
+
           
           <Route path="/LoginRegister" exact component={LoginRegister} />
 
