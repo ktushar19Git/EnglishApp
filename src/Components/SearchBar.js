@@ -7,6 +7,12 @@ import { ImSearch} from "react-icons/im";
 import Button from '@material-ui/core/Button';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useHistory } from "react-router-dom";
+import Grid from '@material-ui/core/Grid';
+import { ImNext } from 'react-icons/im';
+import { FcNext } from 'react-icons/fc';
+import { GrNext } from 'react-icons/gr'
+import { GoTriangleRight } from 'react-icons/go'
+
 
 const useStyles = makeStyles((theme) => ({
      title:{
@@ -43,34 +49,34 @@ export default function SearchBar() {
     }
 
     return (
-        <div>
-            <AppBar position="static">
-                <Toolbar class="top-searchbar"> 
-                    <div style={{display: "inherit",  transform: "translate(100%, 2%)"}}>
-                    <div class="phone">
-                        
-                        <Typography className={classes.title}>Call Us +91 9108705205</Typography>
-                    </div>                                            
-                    
-                    <div>
-                    <Button  id="regmenu-btn" 
+        <div class="top-searchbar">
+
+                <div >
+                        <Grid container>
+                            <Grid item xs={12} sm={10} >
+                                <div>
+                                    <div>
+                                    Call Us +91 9108705205 
+
+                                    </div>
+                                    
+                                </div>
+                            </Grid>
+                            <Grid item xs={12} sm={2} >
+                                <div >
+                                <Button  id="regmenu-btn" 
                                         style={{
-                                          padding: "0px 10px 0px 0px !important",
-                                          width: "280px !important",
-                                          color:'white',
+                                          color:'black',
+                                          fontWeight:'bold'
                                         }} onClick={() => {
                 onLoginPage();
               }}><ExitToAppIcon></ExitToAppIcon>Login</Button>
-                    </div>                
-                    <div class="search" style={{position:"relative"}}>
-                            <div className={classes.searchIcon}>
-                                <ImSearch/>
-                            </div>
-                            <input type="text" className={classes.text1}/>
+                                </div>
+                            </Grid>
+                        </Grid>
                     </div>
-                    </div>
-                </Toolbar> 
-            </AppBar>
+
+            
         </div>
     )
 }

@@ -85,7 +85,8 @@
   margin-left: 50px;
   margin-right: 0px;
   /*
-  background-color: #034e9f;*/
+  background-color: #0057A2;
+  */
   
 
 }
@@ -100,14 +101,14 @@
   /*
   width: 150px;
   */
-  margin: 5px;
+  margin-right: 5px;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   /*padding-right: 25px;*/
-  background-color: white;
-  color: #034e9f;
-  border-radius: 10px;
+  background-color: transparent;
+  color: #0057A2;
+  border-radius: 0px;
   text-align: center;
 
 }
@@ -121,9 +122,16 @@
 { 
   /*background:  #1379cc;*/
   /*background-image: linear-gradient(to right, #00C9FF, #92FE9D);*/
-  background: linear-gradient(to right, GreenYellow, GreenYellow);
   border-radius: 3px;
-  color: rgb(247, 165, 12) ;
+  color: white ;
+
+}
+.Menu ul li a:hover
+{ 
+  /*background:  #1379cc;*/
+  /*background-image: linear-gradient(to right, #00C9FF, #92FE9D);*/
+  border-radius: 3px;
+  color: white ;
 
 }
 .SubMenu
@@ -137,7 +145,7 @@
   /*background: #1261A0;*/
   /*background-image: linear-gradient(to bottom, #ad5389, #3c1053);*/
   
-  margin-top: 3px;
+  margin-top: 5px;
   margin-left: -10px;
   text-align: left;
   
@@ -149,23 +157,27 @@
   margin-left: 0px;
   padding-left: 0px;
   color: #034e9f;
+  background-color:  #0057A2;
 }
 .Menu ul li:hover .SubMenu ul li
 {
-  padding-top: 0px;
+  padding-top: 5px;
   /*border-bottom: 1px solid orange;*/
-  background: linear-gradient(to right, PowderBlue, PowderBlue);
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0px;
+  background-color:  transparent;
+  margin-right: 0px;
+
+  
 }
 .Menu ul li:hover .SubMenu ul li a
 {
   color: black;
+  margin-top: 2px;
 }
 .Menu ul li:hover .SubMenu ul li:hover
 {
   /*background-color: #1273c2;*/
-  background-image: linear-gradient(to right, GreenYellow, GreenYellow);
   color: white;
 }
 .Menu ul li:hover .SubMenu ul li a:hover
@@ -189,7 +201,7 @@
   /*background: #1261A0;*/
   /*background-image: linear-gradient(to bottom, #ad5389, #3c1053);*/
   
-  margin-top: 3px;
+  
   margin-left: 125px;
   margin-top: -24px;
   text-align: left;
@@ -204,14 +216,15 @@
   margin-left: 0px;
   padding-left: 0px;
   color: #034e9f;
+  background-color:  #0057A2;
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li
 {
-  padding-top: 0px;
+  padding-top: 5px;
   /*border-bottom: 1px solid orange;*/
-  background: linear-gradient(to right, PowderBlue, PowderBlue);
+  background: transparent;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 0px;
   width: 100%;
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a
@@ -222,7 +235,6 @@
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li:hover
 {
   /*background-color: #1273c2;*/
-  background-image: linear-gradient(to right, GreenYellow, GreenYellow);
   color: white;
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a:hover
@@ -616,9 +628,9 @@
   background-size: cover;
   position: relative;
   transform: translate(20%, -20%);
-  z-index: 1;
-  height: 185%;
-  width: 110%;
+  z-index: 100;
+  height: 220%;
+  width: 112%;
   /*
   width: 125px;
   height: 115px;*/
@@ -652,7 +664,7 @@ h3.logotitle {
   text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bolder;
-  background-color: #1E90FF;
+  background-color: #0057A2;
   margin-top: 10px;
   /*font-variant-caps: all-petite-caps;*/
 
@@ -678,11 +690,10 @@ h3.logotitle {
 }
 .top-searchbar{
 	
-  background-image: linear-gradient(to right, #ad5389, navy);
-	
-    display: inherit;
-    
-    padding: 5px;
+  background-color: lightgreen;
+  font-size: 12px;
+  padding-left: 500px;
+  padding-top: 5px;
 }
 .section-outer-box
 {
@@ -840,6 +851,9 @@ h3.logotitle {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px; 
+  background-color: #0057A2;
+  color: yellow;
+  font-weight: bold;
 }
 .Footer-inner-box
 {

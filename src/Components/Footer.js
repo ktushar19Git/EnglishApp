@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 
 function Footer() {
     return (
-        <div class="Footer-main-box bg-navy color-white">
+        <div class="Footer-main-box">
             
             <div class="Footer-inner-box">
                 <Grid container>

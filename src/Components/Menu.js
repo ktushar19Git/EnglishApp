@@ -14,7 +14,7 @@ function Menu()
         <ul >
             
             
-            <li><a>Grammar</a>
+            <li><a href="">Grammar</a>
                 <div class="SubMenu">
                     <ul >
                         <li>
@@ -101,7 +101,7 @@ function Menu()
             
 
             
-            <li><a>Vocabulary</a>
+            <li><a href="">Vocabulary</a>
                 <div class="SubMenu">
                     <ul >
                         <li>
@@ -123,7 +123,7 @@ function Menu()
                     </ul>
                 </div>
             </li>
-            <li><a>Practice</a>
+            <li><a href="">Practice</a>
                 <div class="SubMenu">
                     <ul >
                         <li>
@@ -135,7 +135,7 @@ function Menu()
                     </ul>
                 </div>
             </li>
-            <li><a>Article</a></li>
+            <li><a href="">Article</a></li>
         </ul>
 
     </div>
