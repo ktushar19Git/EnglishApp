@@ -81,12 +81,15 @@
   text-align: left;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bolder;
-  /*font-variant-caps: all-petite-caps;*/
+  font-size: 14px;
+  font-variant-caps: all-petite-caps;
   margin-left: 50px;
   margin-right: 0px;
   /*
   background-color: #0057A2;
   */
+  z-index: 200;
+  border-bottom: 2px solid black;
   
 
 }
@@ -95,6 +98,7 @@
   list-style-type: none;
   color: black;
   text-align: center;
+  margin-bottom: 0px;
 }
 .Menu ul li
 {
@@ -161,6 +165,7 @@
   /*background-color:  #0057A2;*/
   background-color:  white;
   border: solid black 1px;
+  width: 200px;
 }
 .Menu ul li:hover .SubMenu ul li
 {
@@ -210,7 +215,7 @@
   /*background-image: linear-gradient(to bottom, #ad5389, #3c1053);*/
   
   
-  margin-left: 124px;
+  margin-left: 188px;
   margin-top: -25px;
   text-align: left;
   width: 100%;
@@ -638,8 +643,8 @@
   background-size: cover;
   position: relative;
   transform: translate(20%, -20%);
-  z-index: 100;
-  height: 220%;
+  z-index: 200;
+  height: 275%;
   width: 112%;
   /*
   width: 125px;
