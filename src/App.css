@@ -124,7 +124,7 @@
   /*background-image: linear-gradient(to right, #00C9FF, #92FE9D);*/
   border-radius: 0px;
   color: white ;
-  background-color: #0057A2;
+  background-color: skyblue;
 
 }
 .Menu ul li a:hover
@@ -181,7 +181,7 @@
 }
 .Menu ul li:hover .SubMenu ul li:hover
 {
-  /*background-color: #1273c2;*/
+  background-color: skyblue;
   color: white;
 }
 .Menu ul li:hover .SubMenu ul li a:hover
@@ -229,7 +229,7 @@
   background: transparent;
   text-align: left;
   border-radius: 0px;
-  width: 100%;
+  
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a
 {
@@ -238,7 +238,7 @@
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li:hover
 {
-  /*background-color: #1273c2;*/
+  background-color: skyblue;
   color: white;
 }
 .Menu ul li:hover .SubMenu ul li:hover .SubMenu-1 ul li a:hover
