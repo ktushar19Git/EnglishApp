@@ -261,6 +261,23 @@
 
   border-bottom: none;
 }
+.Menu-Down-Icon
+{
+  color: black;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: right;
+  padding-left: 5px;
+  
+}
+.Menu-Next-Icon
+{
+  color: black;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: right;
+  
+}
 
 
 .div_header{
@@ -705,10 +722,13 @@ h3.logotitle {
 }
 .top-searchbar{
 	
-  background-color: lightgreen;
+  background-color: purple;
   font-size: 12px;
   padding-left: 500px;
   padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+  color: white;
 }
 .section-outer-box
 {
