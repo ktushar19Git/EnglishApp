@@ -42,7 +42,7 @@ function Simile() {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={7} >
-                                <div class="Nouns-logo">
+                                <div class="Similes-logo">
 
                                 </div>
                             </Grid>

@@ -739,7 +739,7 @@ h3.logotitle {
   
 }
 .Nouns-logo{
-	background-image: url("images/noun-logo.jpg");
+	background-image: url("images/banners/Nouns.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -754,8 +754,8 @@ h3.logotitle {
   background-color: #034e9f;
   */
 }
-.Varbs-logo{
-	background-image: url("images/verbs-logo.jpg");
+.Pronouns-logo{
+	background-image: url("images/banners/Pronouns.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -764,11 +764,72 @@ h3.logotitle {
   
   width: 300px;
   height: 225px;
+}
+.Verbs-logo{
+	background-image: url("images/banners/Verbs.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
   
+  width: 300px;
+  height: 225px;
+}
+.Adjectives-logo{
+	background-image: url("images/banners/Adjectives.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
   
-  /*
-  background-color: #034e9f;
-  */
+  width: 300px;
+  height: 225px;
+}
+.Conjunctions-logo{
+	background-image: url("images/banners/Conjunctions.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Interjections-logo{
+	background-image: url("images/banners/Interjections.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Prepositions-logo{
+	background-image: url("images/banners/Prepositions.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Similes-logo{
+	background-image: url("images/banners/Similes.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
 }
 .Content-section
 {
