@@ -1,20 +1,18 @@
 .div-Vocaulary
 {
-    border-radius: 15px;
-    border:solid black 2px;
-    border-left: solid black 10px;
-    border-right: solid black 10px;
+    
+    border-bottom:#78C144 black 0px;
     padding: 10px;
     font-size: 12px;
     margin: 10px;
+    background-color: #0057A2;
 }
 .div-Vocaulary-Text
 {
     
     
-    margin-top: 10px;
     font-weight: bolder;
-    background-color: black;
+    background-color:	#78C144;
     padding: 10px;
     color: white;
     font-size: 16px;
@@ -27,12 +25,13 @@
     font-weight: bolder;
     font-size: 14px;
     vertical-align: top;
+    color: yellow;
 }
 .div-Vocaulary-examples
 {
     padding: 5px;
     text-align: left;
-    color: brown;
+    color: white;
     margin: 5px;
 }
 .div-Vocaulary-image
@@ -43,7 +42,15 @@
 }
 .div-Vocaulary-image-td
 {
-    vertical-align:middle;
+    background-image: url("../images/logo.svg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transform: translate(10%, 20%);
+  z-index: 1;
+  height: 75px;
+  width: 75px;
 }
 .div-Vocaulary-Meaning-Examples-td
 {

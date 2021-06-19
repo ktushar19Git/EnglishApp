@@ -97,11 +97,14 @@ class VocabularyDisplay extends Component
             
             <Header></Header>
             <div class="Main_div_content">
-              <div style={{textAlign:"center"}}>
+              <div>
+
+              <div class="section-outer-box">
                 <div class="label-heading">
-                      Vocaubulary
+                      Vocabulary
                 </div>
-                <GridList cols={4} style={{alignItems:"center"}}>
+                <div >
+                <GridList cols={5}>
                   
                   {
                             this.state.InputData &&
@@ -112,8 +115,11 @@ class VocabularyDisplay extends Component
                                       <div class="div-Vocaulary-Text">{InputData.Vocabulary}</div>
                                       <div>
                                         <table>
-                                          <td class="div-Vocaulary-image-td">
-                                            <FcBusinessman class="div-Vocaulary-image"></FcBusinessman>
+                                          <td >
+                                            <div class="div-Vocaulary-image-td">
+                                              
+                                            </div>
+                                            
                                             
                                           </td>
                                           <td class="div-Vocaulary-Meaning-Examples-td">
@@ -143,12 +149,14 @@ class VocabularyDisplay extends Component
                 
 
                 </GridList>
+                </div>
 
 
                 
                 <div class="label-heading">
 
                 </div>
+              </div>
               </div>
             </div>
 

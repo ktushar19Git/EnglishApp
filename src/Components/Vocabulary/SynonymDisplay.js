@@ -79,11 +79,14 @@ class SynonymDisplay extends Component
             
             <Header></Header>
             <div class="Main_div_content">
-              <div style={{textAlign:"center"}}>
+              <div>
+
+              <div class="section-outer-box">
                 <div class="label-heading">
                       Synonyms
                 </div>
-                <GridList cols={4} style={{alignItems:"center"}}>
+                <div>
+                <GridList cols={4} >
                   
                   {
                             this.state.InputData &&
@@ -126,12 +129,14 @@ class SynonymDisplay extends Component
                 
 
                 </GridList>
+                </div>
 
 
                 
                 <div class="label-heading">
 
                 </div>
+              </div>
               </div>
             </div>
 
