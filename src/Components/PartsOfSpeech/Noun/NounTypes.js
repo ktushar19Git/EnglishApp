@@ -27,83 +27,127 @@ function NounTypes() {
                     <p>As you can see, Below are the types of Nouns based on their uses"</p>
                     <div class="section-inner-box">
                         <Grid container>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
                                         Common Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#ComNoun">Learn More..</a>
                                         </div>
+                                    <div class="div-list-def">
+                                        Common Nouns are generic names given to people, places and some things.
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#ComNoun">Learn More..</a>
                                     </div>
-                                    
-                                        
-                                    
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                </div>
+
+
+
+                            </Grid>
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
                                         Concrete Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#ConcreteNoun">Learn More..</a>
                                         </div>
+                                    <div class="div-list-def">
+                                        Concrete Nouns are words using five senses (See, Hear, Touch, Smell and Taste).
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#ConcreteNoun">Learn More..</a>
                                     </div>
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                </div>
+                            </Grid>
+
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
                                         Proper Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#PropNoun">Learn More..</a>
                                         </div>
+                                    <div class="div-list-def">
+                                        Proper Nouns are specific names for paticular people, places and some things.
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#PropNoun">Learn More..</a>
                                     </div>
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
+                                </div>
+                            </Grid>
+
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
                                         Abstract Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#AbsNoun">Learn More..</a>
                                         </div>
+                                    <div class="div-list-def">
+                                        Abstract Nouns are things you can’t see, hear, touch, smell or taste.
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#AbsNoun">Learn More..</a>
                                     </div>
-                                </Grid>
-                                
+                                </div>
                             </Grid>
+                        </Grid>
 
-                            <Grid container>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
+                        <Grid container>
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
                                         Collective Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#CollNoun">Learn More..</a>
                                         </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
-                                        Coumpund Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#CompNoun">Learn More..</a>
+                                    <div class="div-list-def">
+                                        Collective Nouns are words referring to a group of things.
                                         </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#CollNoun">Learn More..</a>
                                     </div>
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
-                                        Countable Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#CountNoun">Learn More..</a>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={12} sm={3} >
-                                    <div class="bg-blue Normal-mp color-white font-bold">
-                                        Un-Countable Nouns
-                                        <div class="Normal-mp-5px">
-                                            <a class="link" href="#UncountNoun">Learn More..</a>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                
+                                </div>
                             </Grid>
-                        </div>
-                        
 
-                    
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
+                                        Compound Nouns
+                                        </div>
+                                    <div class="div-list-def">
+                                        Compound Nouns are words made with two or more words put together.
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#CompNoun">Learn More..</a>
+                                    </div>
+                                </div>
+                            </Grid>
+
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
+                                        Countable Nouns
+                                        </div>
+                                    <div class="div-list-def">
+                                        Countable Nouns are things that can be counted.(Singular/plural)
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#CountNoun">Learn More..</a>
+                                    </div>
+                                </div>
+                            </Grid>
+
+                            <Grid item xs={12} sm={3} >
+                                <div class="div-list-main">
+                                    <div class="div-list-header">
+                                        Un-Countable Nouns
+                                        </div>
+                                    <div class="div-list-def">
+                                        Un-countable Nouns are things that aren't possible to be counted.
+                                        </div>
+                                    <div class="div-list-link">
+                                        <a class="link" href="#UncountNoun">Learn More..</a>
+                                    </div>
+                                </div>
+                            </Grid>
+
+                        </Grid>
+                    </div>
+
+
+
 
                     <div id="ComNoun" class="div_sub_section_item">
                         <div class="label-sub-heading-item font-bold bg-teal">Common Nouns</div>
@@ -246,9 +290,9 @@ function NounTypes() {
                                 <li> cups </li>
                                 <li> girls </li>
                             </ul>
-                            <p> All the examples for countable nouns can all be individually counted. 
-                                In the singular examples, it showed that there was only one of each and they either had an 'a' or 'an' however, 
-                                the plural examples didn't have an 'a' or 'an' and it showed that were more than one of each.
+                            <p> All the examples for countable nouns can all be individually counted.
+                            In the singular examples, it showed that there was only one of each and they either had an 'a' or 'an' however,
+                            the plural examples didn't have an 'a' or 'an' and it showed that were more than one of each.
                             </p>
                         </div>
                     </div>
@@ -259,7 +303,7 @@ function NounTypes() {
                             <span>Un-countable Nouns</span> are things that aren't possible to be counted.
                             <ul>
                                 <li>It is impossible for an Un-countable Noun to have a plural form, they are always singular.</li>
-                                
+
                             </ul>
 
                             <p><span>For Example:</span></p>

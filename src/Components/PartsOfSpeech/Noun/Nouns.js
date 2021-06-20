@@ -1,6 +1,7 @@
 import React from 'react'
 import NounExamples from './NounExamples'
 import NounTypes from './NounTypes'
+import NounUsages from './NounUsages'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { FaHandMiddleFinger } from 'react-icons/fa';
 import Navbar from '../../Navbar';
@@ -60,6 +61,10 @@ function Nouns() {
 
                 <div>
                     <NounTypes></NounTypes>
+
+                </div>
+                <div>
+                    <NounUsages></NounUsages>
 
                 </div>
                 <div>

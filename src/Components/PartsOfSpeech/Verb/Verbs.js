@@ -39,7 +39,7 @@ function Verbs() {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={7} >
-                                <div class="Nouns-logo">
+                                <div class="Verbs-logo">
 
                                 </div>
                             </Grid>

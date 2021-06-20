@@ -40,7 +40,7 @@ function Adjectives() {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={7} >
-                                <div class="Nouns-logo">
+                                <div class="Adjectives-logo">
 
                                 </div>
                             </Grid>
