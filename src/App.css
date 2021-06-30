@@ -785,7 +785,7 @@ h3.logotitle {
   
 }
 .Nouns-logo{
-	background-image: url("images/noun-logo.jpg");
+	background-image: url("images/banners/Nouns.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -800,8 +800,8 @@ h3.logotitle {
   background-color: #034e9f;
   */
 }
-.Varbs-logo{
-	background-image: url("images/verbs-logo.jpg");
+.Pronouns-logo{
+	background-image: url("images/banners/Pronouns.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -810,11 +810,83 @@ h3.logotitle {
   
   width: 300px;
   height: 225px;
+}
+.Verbs-logo{
+	background-image: url("images/banners/Verbs.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
   
+  width: 300px;
+  height: 225px;
+}
+.Adjectives-logo{
+	background-image: url("images/banners/Adjectives.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
   
-  /*
-  background-color: #034e9f;
-  */
+  width: 300px;
+  height: 225px;
+}
+.Conjunctions-logo{
+	background-image: url("images/banners/Conjunctions.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Interjections-logo{
+	background-image: url("images/banners/Interjections.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Prepositions-logo{
+	background-image: url("images/banners/Prepositions.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Adverbs-logo{
+	background-image: url("images/banners/Adverbs.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
+}
+.Similes-logo{
+	background-image: url("images/banners/Similes.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 75px;
+  z-index: 1;
+  
+  width: 300px;
+  height: 225px;
 }
 .Content-section
 {
@@ -895,4 +967,24 @@ h3.logotitle {
   padding-left: 0px;
   padding-top: 20px;
   margin-bottom: 10px;  
+}
+.div-list-main{
+  background-color: #0057A2;
+  margin: 5px;
+}
+.div-list-header{
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+}
+.div-list-def{
+  margin: 5px;
+  padding: 5px;
+  color: yellow;
+}
+.div-list-link{
+  padding: 5px;
+  background-color: yellowgreen;
+  text-align: right;
 }
