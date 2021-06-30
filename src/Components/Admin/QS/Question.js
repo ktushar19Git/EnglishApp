@@ -1,46 +1,127 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import TextField from "@material-ui/core/TextField";
 import Button from '@material-ui/core/Button';
+import Checkbox from '@material-ui/core/Checkbox'
+
+import GridTable from '../../GridTable'
 
 
 
 import Menu from '../AdminMenu'
 import Header from '../../Header'
 import firebase from '../../../services/firebase';
+import axios from 'axios';
+
+import ReactQuill, { Quill, Mixin, Toolbar } from 'react-quill'; // ES6
+import 'react-quill/dist/quill.snow.css'; // ES6
+import parse from 'html-react-parser';
+
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import InputLabel from '@material-ui/core/InputLabel';
+
+import { Dropdown, Tooltip, Form } from 'react-bootstrap';
+
+import { Table, Snackbar } from '@material-ui/core';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import DoneIcon from '@material-ui/icons/Done';
+import ClearIcon from '@material-ui/icons/Clear';
 
 
-class Question extends Component
+
+
+function Question ()
 {
-    constructor(props)
-    {
-        super(props);
-        //this.fnCreateAccount = this.fnCreateAccount.bind(this);
-        this.fnSubmitQuestion = this.fnSubmitQuestion.bind(this);        
-        this.HandleChange = this.HandleChange.bind(this);
-        //this.fnShowError = this.fnShowError.bind(this);
-        
-        this.state = {
-            QuestionName :"",
-            Answer1Name:"",
-            Answer2Name:"",
-            Answer3Name:"",
-            Answer4Name:"",
-            CorrectAnswer:"",
-            strErrMessage:"",
-            
-
-        }
-    }
-    HandleChange(e)
-    {
-        this.setState(
-            {
-                [e.target.name] : e.target.value
-            }
-        )
-    }
+    const [LevelId,setLevelId] = useState(1);
+    const [SubjectId,setSubjectId] = useState(1);
+    const [ChapterId,setChapterId] = useState(1);
+    const [QuestionTypeId,setQuestionTypeId] = useState(1);
+    const [QuestionName,setQuestionName] = useState("");
     
-    fnSubmitQuestion() {
+    const [strErrMessage,setstrErrMessage] = useState("");
+    const [OptionText,setOptionText] = useState("");
+    
+    const [isCorrectOption,setisCorrectOption] = useState(false);
+    const [AnswerGuidance,setAnswerGuidance] = useState("");
+
+    const [Options,setOptions] = useState([
+        /*
+        {OptionText:"Yes",
+            isCorrectOption:"1"},
+            {OptionText:"No",
+            isCorrectOption:"0"},
+            */
+    ])
+    
+    
+    const HandleChange= (value)=>
+    {
+        //[e.target.name] : e.target.value
+        //alert(QuestionType);
+        setQuestionTypeId(value);
+        //alert(value);
+    }
+    const HandleRichChange = (value)=>
+    {
+        setQuestionName(value);
+    }
+    const HandleRichChangeAG = (value)=>
+    {
+        setAnswerGuidance(value);
+    }
+    const fnAddOption=()=>
+      {
+          //Logic goes here
+          const newOption = [
+            {OptionText:OptionText,
+            isCorrectOption:isCorrectOption},
+          ];
+          const Arr = Options.concat(newOption)
+
+          setOptions(Arr)
+          /*
+          this.setState({Optiondata:ExistingOptions});
+
+          alert(this.state.Optiondata.length);
+          */
+          
+
+
+      }
+    const HandleOptionChange=(value)=>
+    {
+        setOptionText(value);
+    }
+    const HandleCheckChange=()=>
+    {
+        setisCorrectOption(!isCorrectOption);
+    }
+    const modules = {
+        toolbar: [
+          [{ 'header': [1, 2, false] }],
+          ['bold', 'italic', 'underline','strike', 'blockquote'],
+          [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
+          ['link', 'image'],
+          ['clean']
+        ],
+      };
+     
+      const formats = [
+        'header',
+        'bold', 'italic', 'underline', 'strike', 'blockquote',
+        'list', 'bullet', 'indent',
+        'link', 'image'
+      ];
+    
+      
+      
+    const fnSubmitQuestion=()=> {
         /*
         try {
           await signUp(
@@ -55,25 +136,27 @@ class Question extends Component
         */
 
         let strErr = "";
-        if (this.state.QuestionName == "") {
+        if (QuestionName == "") {
             strErr = strErr + "Please enter Question\n";
 
         }
-        if (this.state.Answer1Name == "") {
+        /*
+        if (Answer1Name == "") {
             strErr = strErr + "Please enter Answer 1\n";
         }
-        if (this.state.Answer2Name == "") {
+        if (Answer2Name == "") {
             strErr = strErr + "Please enter Answer 2\n";
         }
-        if (this.state.Answer3Name == "") {
+        if (Answer3Name == "") {
             strErr = strErr + "Please enter Answer 2\n";
         }
-        if (this.state.Answer4Name == "") {
+        if (Answer4Name == "") {
             strErr = strErr + "Please enter Answer 4\n";
         }
-        if (this.state.CorrectAnswer == "") {
+        if (CorrectAnswer == "") {
             strErr = strErr + "Please select Correct Answer option \n";
         }
+        */
         
 
         if (strErr != "") {
@@ -87,23 +170,48 @@ class Question extends Component
                 }
                 else
                 {
-                //alert(this.state.SoilMoisture + "\n" + this.state.SoilTemperature + "\n" + this.state.SoilpH + "\n" + this.state.SunLight + "\n" + this.state.EnvTemp);
-                //firebase.auth().createUserWithEmailAndPassword(this.state.Email,this.state.Password);
-                const db = firebase.firestore();
-                //alert(document.getElementById("posted_datetime-local").value);
-                //alert(localStorage.getItem("g_user_id"));
-                db.collection("Questions").add({
-                    Question:this.state.QuestionName,
-                    Answer1: this.state.Answer1Name,
-                    Answer2: this.state.Answer2Name,
-                    Answer3: this.state.Answer3Name,
-                    Answer4: this.state.Answer4Name,
-                    CorrectAnswer: this.state.CorrectAnswer,
-                    //uid: localStorage.getItem("g_user_id")
-                })
 
-                alert("Record Added Successfully");
-                //this.fnFetchData();
+                    /*
+                    //alert(this.state.SoilMoisture + "\n" + this.state.SoilTemperature + "\n" + this.state.SoilpH + "\n" + this.state.SunLight + "\n" + this.state.EnvTemp);
+                    //firebase.auth().createUserWithEmailAndPassword(this.state.Email,this.state.Password);
+                    const db = firebase.firestore();
+                    //alert(document.getElementById("posted_datetime-local").value);
+                    //alert(localStorage.getItem("g_user_id"));
+                    db.collection("Questions").add({
+                        Question:this.state.QuestionName,
+                        Answer1: this.state.Answer1Name,
+                        Answer2: this.state.Answer2Name,
+                        Answer3: this.state.Answer3Name,
+                        Answer4: this.state.Answer4Name,
+                        CorrectAnswer: this.state.CorrectAnswer,
+                        //uid: localStorage.getItem("g_user_id")
+                    })
+                    */
+                    const question = {
+            
+                        LevelId: LevelId,
+                        SubjectId: SubjectId,
+                        ChapterId: ChapterId,
+                        QuestionTypeId: QuestionTypeId,
+                        QuestionName: QuestionName,
+                        Options: Options,
+                        AnswerGuidance:AnswerGuidance,
+                        
+                    }
+
+                    //alert(question);
+
+                    //to pass data to backend
+                    //console.log(registered.userName);
+                    axios.post('http://localhost:4000/app/Question', question)
+                    .then(response => {
+                        console.log(response.data);
+                        alert("Quesiton Inserted Successfully!");
+                        //window.location = "/StaffDetails";
+                    })    
+
+                    //alert("Record Added Successfully");
+                    //this.fnFetchData();
                 }
             }
             
@@ -114,7 +222,7 @@ class Question extends Component
     }
         
 
-    render(){
+    
         return(
             <div class="AdminPanelDiv">
                 
@@ -133,97 +241,176 @@ class Question extends Component
                                     <td colSpan="2"><div>Question Management</div></td>
                                 </tr>
                                 <tr>
+                                    <td>
+                                    <Form.Label>Level</Form.Label>
+                                    </td>
+                                    <td>
+                                        <Form.Group  controlId="formGridState">
+                                            <Form.Control as="select" value={LevelId} onChange={HandleChange} >
+                                                            <option value={1}>First</option>
+                                                            <option value={2}>Second</option>
+                                            </Form.Control>
+                                        </Form.Group>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <Form.Label>Subject</Form.Label>
+                                    </td>
+                                    <td>
+                                        <Form.Group  controlId="formGridState">
+                                            <Form.Control as="select" value={SubjectId} onChange={HandleChange} >
+                                                            <option value={1}>Nouns</option>
+                                                            <option value={2}>Pronouns</option>
+                                            </Form.Control>
+                                        </Form.Group>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <Form.Label>Chapter</Form.Label>
+                                    </td>
+                                    <td>
+                                        <Form.Group  controlId="formGridState">
+                                            <Form.Control as="select" value={ChapterId} onChange={HandleChange} >
+                                                            <option value={1}>Identify Nouns</option>
+                                                            <option value={2}>Differentiate Nouns</option>
+                                            </Form.Control>
+                                        </Form.Group>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <Form.Label>Question Type</Form.Label>
+                                    </td>
+                                    <td>
+                                        <Form.Group  controlId="formGridState">
+                                            <Form.Control as="select" value={QuestionTypeId} onChange={HandleChange} >
+                                                            <option value={1}>Single Choice</option>
+                                                            <option value={2}>Multiple Choice</option>
+                                            </Form.Control>
+                                        </Form.Group>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>Question Description</td>
                                     <td>
-                                        <TextField
-                                            label="Add Question"
-                                            variant= "outlined"
-                                            id='idQuestionName'
-                                            value={this.state.QuestionName}
-                                            onChange={this.HandleChange}
-                                            name="QuestionName"
-                                            
-                                        />
+                                        <ReactQuill
+                                            placeholder="Write your question"
+                                            value={QuestionName}
+                                            theme="snow"
+                                            modules={modules}
+                                            formats={formats}
+                                            onChange={HandleRichChange}
+                                        >
+
+                                        </ReactQuill>
+                                        
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>Answer1 Description</td>
+                                
+                                <tr >
                                     <td>
-                                        <TextField
-                                            label="Add Answer 1"
-                                            variant= "outlined"
-                                            id='idAnswer1'
-                                            value={this.state.Answer1Name}
-                                            onChange={this.HandleChange}
-                                            name="Answer1Name"
-                                            
-                                        />
+                                        Options                    
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>Answer2 Description</td>
                                     <td>
-                                        <TextField
-                                            label="Add Answer 2"
-                                            variant= "outlined"
-                                            id='idAnswer2'
-                                            value={this.state.Answer2Name}
-                                            onChange={this.HandleChange}
-                                            name="Answer2Name"
+                                        <ReactQuill
+                                            placeholder="Write your question"
+                                            value={OptionText}
                                             
-                                        />
+                                            theme="snow"
+                                            modules={modules}
+                                            formats={formats}
+                                            onChange={HandleOptionChange}
+                                        >
+
+                                        </ReactQuill>
+                                        
+                                        Is this a correct Option?
+                                        <Checkbox checked={isCorrectOption} onChange={HandleCheckChange}>
+                                            
+                                        </Checkbox>
+
+                                        <Button
+                                                    style={{
+                                                        width:"360px",
+                                                    }}
+                                            onClick={fnAddOption}
+                                            
+
+                                        >
+                                            Add Option
+                                        </Button>
+
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Answer3 Description</td>
+                                    <td colSpan="2">
+                                        The Existing Options
+
+                                        
+
+                                        <Table class="GridTable" >
+                                            <TableHead >
+                                                <TableRow>
+                                                    <TableCell>Option Text</TableCell>
+                                                    <TableCell>Is this correct option</TableCell>
+                                                    <TableCell>Edit|Delete</TableCell>
+                                                </TableRow>
+                                            </TableHead>
+                                            <TableBody>
+                                                {Options &&
+                                                Options.map(item=>{
+                                                    return( 
+                                                        <TableRow key={item.OptionText}>
+                                                            
+                                                            <TableCell>{parse(item.OptionText)}</TableCell>
+                                                            <TableCell>
+                                                                {item.isCorrectOption ? <DoneIcon className="CorrectAnswerIcon"></DoneIcon> : <ClearIcon className="WrongAnswerIcon"></ClearIcon>}
+                                                            </TableCell>
+                                                            
+                                                            <TableCell>{
+                                                                <span>
+                                                                    <button class="btn"><a><EditIcon></EditIcon></a></button>
+                                                                     | <button class="btn"><DeleteIcon></DeleteIcon></button> 
+                                                                </span>
+                                                                        }
+                                                            </TableCell>
+                                                        </TableRow>
+                                                    )
+                                                })
+                                                }
+                                            </TableBody>
+                                        </Table> 
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Answer Guidance</td>
                                     <td>
-                                        <TextField
-                                            label="Add Answer 3"
-                                            variant= "outlined"
-                                            id='idAnswer3'
-                                            value={this.state.Answer3Name}
-                                            onChange={this.HandleChange}
-                                            name="Answer3Name"
-                                            
-                                        />
+                                        <ReactQuill
+                                            placeholder="Write your guidance"
+                                            value={AnswerGuidance}
+                                            theme="snow"
+                                            modules={modules}
+                                            formats={formats}
+                                            onChange={HandleRichChangeAG}
+                                        >
+
+                                        </ReactQuill>
+                                        
                                     </td>
                                 </tr>
+
+                                
                                 <tr>
-                                    <td>Answer4 Description</td>
-                                    <td>
-                                        <TextField
-                                            label="Add Answer 4"
-                                            variant= "outlined"
-                                            id='idAnswer4'
-                                            value={this.state.Answer4Name}
-                                            onChange={this.HandleChange}
-                                            name="Answer4Name"
-                                            
-                                        />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Correct Answer</td>
-                                    <td>
-                                        <TextField
-                                            label="Choose Correct Answer"
-                                            variant= "outlined"
-                                            id='idCorrectAnswer'
-                                            value={this.state.CorrectAnswer}
-                                            onChange={this.HandleChange}
-                                            name="CorrectAnswer"
-                                            
-                                        />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Correct Answer</td>
+                                    <td></td>
                                     <td>
                                         <Button
                                                     style={{
                                                         width:"360px",
                                                     }}
-                                            onClick={this.fnSubmitQuestion}
+                                            onClick={fnSubmitQuestion}
                                             
 
                                         >
@@ -240,6 +427,6 @@ class Question extends Component
                 
             </div>
         )
-    }
+    
 }
 export default Question

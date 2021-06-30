@@ -1,7 +1,23 @@
+.div-Question-Summary
+{
+    background-color: lightcoral;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border:1px solid lightgray;
+    text-align: left;
+}
+.div-Question-Summary span{
+    margin-left: 30px;
+    color: green;
+}
 .div-QuestionTemplate
 {
     border-radius: 20px;
-    border:0px solid black;
+    border:1px solid black;
+    width: 100%;
+
 }
 .div-Question{
     margin: 20px;
@@ -10,6 +26,7 @@
     font-weight:bolder;
     color: brown;
     background-color: lightskyblue;
+    
     
 }
 .div-Answer{
@@ -36,4 +53,62 @@
     padding-left: 25px;
     font-weight: bolder;
     text-align: left;
+}
+.GridTable {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+  }
+.GridTable td, .GridTable th {
+    border: 1px solid #ddd;
+    padding: 4px;
+  }
+
+.GridTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.GridTable tr:hover {background-color: #ddd;}
+
+.GridTable th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bold;
+}
+.CorrectAnswerIcon
+{
+    color: green;
+}
+.WrongAnswerIcon
+{
+    color: red;
+}
+.GridTable-user {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 0px solid #ddd;
+    width: 100%;
+    margin-left: 15px;
+  }
+.GridTable-user td, .GridTable th {
+    border: 0px solid #ddd;
+    padding: 2px;
+  }
+
+
+.GridTable-user th {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bold;
+}
+.OptionCheckbox
+{
+    width: 10px;
 }
