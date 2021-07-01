@@ -988,3 +988,14 @@ h3.logotitle {
   background-color: yellowgreen;
   text-align: right;
 }
+.outer-style
+{
+  border: #036bc0 solid 2px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.p-m
+{
+  padding: 10px;
+  margin: 5px;
+}

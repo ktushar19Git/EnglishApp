@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 function NounTypes() {
     return (
 
-        <div class="section-outer-box">
+        <div class="section-outer-box bg-lightgray">
             <div class="label-heading">
                 <AccessibleIcon></AccessibleIcon>
                 Types of Nouns

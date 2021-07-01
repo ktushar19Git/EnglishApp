@@ -96,6 +96,35 @@
     color: white;
     font-weight: bold;
 }
+/*table 4 styling */
+
+.table_type_4
+{
+    background-color: transparent;
+}
+.table_type_4 tr th
+{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(22, 115, 255);
+    color: white;
+    font-weight: bolder;
+}
+.table_type_4 tr td
+{
+    padding: 5px;
+    margin: 5px;
+    background-color: transparent;
+}
+.table_type_4 tr td:first-child
+{
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(22, 115, 255);
+    color: white;
+    font-weight: bold;
+}
 
 
 

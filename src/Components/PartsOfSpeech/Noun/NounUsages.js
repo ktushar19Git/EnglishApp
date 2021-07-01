@@ -15,8 +15,9 @@ function NounUsages() {
                 Usages of Nouns
             </div>
             <div class="Content_desc">
-                Nouns are classified into multiple types based on their uses. Following are some types of nouns
+                Nouns are a very vital portion of english however it's no use if you don't know how to use them in daily English so in the section below you will learn the exact usage of nouns.
             </div>
+
 
             <div class="section-inner-box">
                 <div class="label-sub-heading">
@@ -26,46 +27,49 @@ function NounUsages() {
                 <div class="list_div">
                     <p>As you can see, Below are the types of Nouns based on their uses"</p>
 
-                    <div id="ComNoun" class="div_sub_section_item">
-                        <div class="internal_text bg-white">
-                            <span>Common Nouns</span> are generic names given to people, places and some things, there are not specific in any  way.
-                            <ul>
-                                <li>Common nouns are generic and aren't specific so they are never capitalized unless if it's at the start of a sentence.</li>
-                                <li>Common nouns are known as the basic non-specific words we use everyday.</li>
-                            </ul>
+                    <div class="outer-style">
+                        <div id="ComNoun" class="div_sub_section_item">
+                            <div class="font-bold bg-white p-m color-teal">Nouns as the Subject</div>
+                            <div class="internal_text bg-white">
+                                There is not even one sentence (that we speak or write) that does not feature at least one subject, which will be the noun of that sentence. Each sentence must contain a subject as the noun in English. The subject of the sentence, meaning the main person, place or thing that does the action (verb) in the sentence. Take a look at some of the sentences given below:
+                                <ul>
+                                    <li><b>Mary</b> is wonderful and beautiful.</li>
+                                    <li>The <b>baseball</b> got hit far away.</li>
+                                </ul>
 
-                            <p><span>For Example:</span></p>
-                            <ul>
-                                <li>Car</li>
-                                <li>Movie</li>
-                                <li>Tea</li>
-                                <li>Mountain</li>
-                            </ul>
-                            <p> Each of the examples above are not distinct at all. They are general nouns that don't give us much information.
-                            </p>
+                                <p><span>The subjects in the sentences above:</span></p>
+                                <ul>
+                                    <li>Mary</li>
+                                    <li>baseball</li>
+                                </ul>
+                                <p> Each of the examples above have a main thing in the sentence which is the focus of the sentence and then it shows the action. The focus of the sentence is the subject and the examples 'Mary' and 'baseball' are both nouns as the subject.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="ConcreteNoun" class="div_sub_section_item">
-                        <div class="internal_text bg-white">
-                            <span>Concrete Nouns</span> can be detected and felt by our five senses (See, Hear, Touch, Smell and Taste).
-                            <ul>
-                                <li>Concrete Nouns are very similiar to common nouns, there isn't a big difference between common and Concrete Nouns.</li>
-                            </ul>
+                    <div class="outer-style">
+                        <div id="ComNoun" class="div_sub_section_item">
+                            <div class="font-bold bg-white p-m color-teal">Nouns as the Object</div>
+                            <div class="internal_text bg-white">
+                                In most sentences, there can also be a use of object nouns. Object of the sentence is the noun that recieves the action(verb) performed by the subject which we learnt above. The object can either be an indirect object or a direct object. Have a look at the sentences below:
+                                <ul>
+                                    <li>John spotted a <b>panda</b>.</li>
+                                    <li>Jen fed the <b>kid</b>.</li>
+                                </ul>
 
-                            <p><span>For Example:</span></p>
-                            <ul>
-                                <li>Bottle</li>
-                                <li>Hammer</li>
-                                <li>Table</li>
-                                <li>Ball</li>
-                            </ul>
-                            <p> All of the examples above, not only are they all Concrete Nouns but they are also known as Common Nouns. </p>
+                                <p><span>The objects in the sentences above:</span></p>
+                                <ul>
+                                    <li>Panda</li>
+                                    <li>Kid</li>
+                                </ul>
+                                <p> Each of the examples above had an action(verb) done by the subject and then comes the object which is the one recieving the action. "Panda" and "kid" are the objects of the sentence.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    
-                    
+
 
 
 

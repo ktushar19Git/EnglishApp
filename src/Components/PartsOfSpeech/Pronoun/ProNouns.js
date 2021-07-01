@@ -1,6 +1,7 @@
 import React from 'react'
-import NounExamples from './ProNounExamples'
-import NounTypes from './ProNounTypes'
+import ProNounExamples from './ProNounExamples'
+import ProNounTypes from './ProNounTypes'
+import ProNounAnt from './ProNounAnt'
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import Navbar from '../../Navbar';
 import Header from "../../Header";
@@ -60,12 +61,16 @@ function ProNouns() {
 
 
                 <div>
-                    <NounExamples></NounExamples>
+                    <ProNounExamples></ProNounExamples>
 
                 </div>
 
                 <div>
-                    <NounTypes></NounTypes>
+                    <ProNounTypes></ProNounTypes>
+
+                </div>
+                <div>
+                    <ProNounAnt></ProNounAnt>
 
                 </div>
                 <div>

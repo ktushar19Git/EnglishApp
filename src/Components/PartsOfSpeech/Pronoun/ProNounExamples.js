@@ -125,7 +125,7 @@ function ProNounExamples()
                 </div>
             </div>
 
-            <div class="MarginNormal">
+            <div>
                 <div class="label-sub-heading">
                     Object Pronouns
                 </div>
@@ -134,7 +134,7 @@ function ProNounExamples()
                 </div>
 
                 <div class="table_div">
-                    <table class="table_type_2">
+                    <table class="table_type_4">
                     <tr>
                             <th>
                                 Pronoun
