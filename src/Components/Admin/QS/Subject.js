@@ -12,6 +12,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import axios from 'axios';
 
 
 
@@ -73,18 +74,18 @@ class Subject extends Component
                 }
                 else
                 {
-                //alert(this.state.SoilMoisture + "\n" + this.state.SoilTemperature + "\n" + this.state.SoilpH + "\n" + this.state.SunLight + "\n" + this.state.EnvTemp);
-                //firebase.auth().createUserWithEmailAndPassword(this.state.Email,this.state.Password);
-                const db = firebase.firestore();
-                //alert(document.getElementById("posted_datetime-local").value);
-                //alert(localStorage.getItem("g_user_id"));
-                db.collection("Subjects").add({
-                    SubjectName:this.state.SubjectName,
-                    //uid: localStorage.getItem("g_user_id")
-                })
-
-                alert("Subject Added Successfully");
-                //this.fnFetchData();
+                    const subject = {
+            
+                        Subject: this.state.SubjectName,
+                        
+                    }
+                    axios.post('http://localhost:4000/app/Subject', subject)
+                    .then(response => {
+                        console.log(response.data);
+                        alert("Subject Inserted Successfully!");
+                        //window.location = "/StaffDetails";
+                    })    
+                    
                 }
             }
             
