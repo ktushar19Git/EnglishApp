@@ -2,6 +2,7 @@ const express = require("express")
 const {request, response} = require("express")
 const questionRouter = express.Router()
 const questionModel = require("../models/questionModels")
+const chapterModel1=require("../models/chapterModels1")
 
 const {mongoose} = require("mongoose")
 
@@ -78,8 +79,22 @@ questionRouter.post('/Question', async (request, response)=>{
 
 //Get All Details
 questionRouter.get('/Question', async (request, response) =>{
-    console.log("Inside Question Get")    
+    console.log("Inside Question Get")  
+   // console.log(request.params.ChapterId);  
+    
     questionModel.find()
+     /*chapterModel.aggregate([
+        {
+            $lookup: {
+                from: "questions",
+                localField: "_id",
+                foreignField: "ChapterId",
+                as: "Questions"
+            },
+        },
+        
+    ])*/
+   
     .then(data =>{
         console.log(data)
         response.json(data)
@@ -88,6 +103,23 @@ questionRouter.get('/Question', async (request, response) =>{
     .catch(error =>{
         console.log("This is inside Error block")
         response.json(error)
+    })
+
+
+})
+
+questionRouter.get('/Question/:ChapterId', async (request, response) =>{
+    console.log(request.params.ChapterId)
+    //const query=request.params.ChapterId
+    questionModel.find({ChapterId:request.params.ChapterId},function(err,data){
+        if(err) response.sendStatus(500).send(err)
+        response.json(data)
+        console.log(data);
+    })
+
+    .catch(err =>{
+        console.log("This is inside Error block")
+        response.json(err)
     })
 })
 

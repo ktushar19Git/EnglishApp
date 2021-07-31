@@ -68,12 +68,12 @@ class Subject extends Component
         }
         else {
             try {
-                if(localStorage.getItem("g_user_id") == null)
-                {
+               // if(localStorage.getItem("g_user_id") == null)
+               // {
                     //alert("You are not logged in. Please Login.");
-                }
-                else
-                {
+               // }
+                //else
+               // {
                     const subject = {
             
                         Subject: this.state.SubjectName,
@@ -86,7 +86,7 @@ class Subject extends Component
                         //window.location = "/StaffDetails";
                     })    
                     
-                }
+               // }
             }
             
             catch (error) {
