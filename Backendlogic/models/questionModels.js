@@ -10,12 +10,14 @@ const QuestionSchema = new Schema({
 
     },
     SubjectId:{
-        type:Number,
+        type: Schema.Types.ObjectID,
+        ref:'Subject',
         required:true,
 
     },
     ChapterId:{
-        type:Number,
+        type: Schema.Types.ObjectID,
+        ref:'Chapter1',
         required:true,
 
     },

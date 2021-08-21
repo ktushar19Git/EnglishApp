@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose') 
 const cors = require('cors')
 
 //for sceurity reason we are using dotenv 
@@ -31,6 +31,12 @@ app.use('/app', questionRoutes)
 //1st argument base path and second url is routeurls
 const subjectRoutes = require('./routes/subjectruotes')
 app.use('/app', subjectRoutes)
+
+const userRoutes = require('./routes/userroutes')
+app.use('/app', userRoutes)
+
+const chapterRoutes1 = require('./routes/chapterroutes1')
+app.use('/app', chapterRoutes1)
 
 /*
 app.get("/",(request,response) =>{
