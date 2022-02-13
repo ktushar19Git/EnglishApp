@@ -22,10 +22,13 @@ import Menu from "../Menu";
 
 import { FcBusinessman, FcBusinesswoman, FcCloseUpMode } from 'react-icons/fc';
 import { FcOrganization, FcGlobe, FcPlanner } from 'react-icons/fc';
-import { FaCat } from 'react-icons/fa';
+import { FaBuromobelexperte, FaCat } from 'react-icons/fa';
 import { GiElephant } from 'react-icons/gi';
 import axios from 'axios';
-import bcrypt from 'bcryptjs'
+//import bcrypt from 'bcryptjs'
+
+import login from './login';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -80,7 +83,7 @@ class LoginRegister extends Component {
                     console.log(response.data);
                     alert("User Registered Successfully!");
                 })
-            }
+        }
     }
 
     Flogin(e) {
@@ -99,30 +102,58 @@ class LoginRegister extends Component {
                 LoginUserName: this.state.LoginUserName,
                 LoginPassword: this.state.LoginPassword,
             }
-           axios.post('http://localhost:4000/app/login', data)
+            axios.post('http://localhost:4000/app/login', data)
                 .then(response => {
                     console.log(response);
                     alert("User logged in successfully")
                     // this.props.history.push('../QuestionDisplay')
-                }).catch((err)=>{console.log('Axios Error',err)})
-            }
+                }).catch((err) => { console.log('Axios Error', err) })
+        }
     }
 
     render() {
         return (
             <div >
 
-                <Header></Header>
-                <div class="Main_div_content">
+                {/* <Header></Header> */}
+                <div class="container">
                     <div style={{ textAlign: 'center', verticalAlign: 'center', }}>
                         <div class="label-heading">
 
                         </div>
-                        <div class="label-heading">
+                        {/* <div class="label-heading">
                             This is Login/Register Component
+                        </div> */}
+
+                        <div class="">
+                            <div class="card shadow-lg mb-5 bg-white rounded">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="registertext">
+                                            <h2>Welcome Back!</h2>
+                                            <p>To continue your previous connection with us, please login with your personal info. </p>
+                                            <a href="/login"><button type="button" class="btn btn-outline-login">Sign In</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="registerbody">
+                                            <h1 class="regheader">Create Account</h1>
+                                            <p>Please enter your requested info</p>
+                                            <div class="inputfields">
+                                                <input type="text" class="form-control" placeholder="Name"></input>
+                                                <input type="text" class="form-control" placeholder="Email"></input>
+                                                <input type="text" class="form-control" placeholder="Password"></input>
+                                                <input type="text" class="form-control" placeholder="Age"></input>
+                                                <input type="date" class="form-control" id="birthday" name="birthday"></input>
+                                            </div>
+                                            <button type="button" class="btn btn-outline-signup">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div >
+                        {/* <div >
                             <ul class="horizontal_list">
 
                                 <li class="List_item_red">
@@ -225,7 +256,7 @@ class LoginRegister extends Component {
 
                             </ul>
 
-                        </div>
+                        </div> */}
 
 
                         <div class="label-heading">

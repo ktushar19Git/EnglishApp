@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.registerbody {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.registertext {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 150px;
+  padding-bottom: 250px;
+  background-color: #69aff9;
+  color: white;
+  font-weight: bold;
+}
+.inputfields input {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.btn-outline-login {
+  background-color: transparent;
+  border: 2px solid white !important;
+  border-radius: 30px !important;
+  color: white;
+  padding: 15px 40px !important;
+}
+
+.btn-outline-signup {
+  background-color: #69aff9;
+  border: 2px solid white !important;
+  border-radius: 30px !important;
+  color: white;
+  padding: 15px 40px !important;
+}
+.regheader {
+  color: #69aff9;
+  font-weight: bold;
+}
+
+.loginpage .btn-outline-login{
+  background-color: #69aff9;
+  border: 2px solid white !important;
+  border-radius: 30px !important;
+  color: white;
+  padding: 15px 40px !important;
+}
+
+.loginpage .registerbody {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btn-outline-forgot {
+  background-color: transparent;
+  border-radius: 10px !important;
+  color: rgb(69, 95, 238);
+  font-weight: bold;
+  font-size: small;
+  padding: 10px;
+  
+}

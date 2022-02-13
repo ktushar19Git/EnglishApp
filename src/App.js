@@ -25,7 +25,8 @@ import Prepositions from './Components/PartsOfSpeech/Preposition/Prepositions';
 import Interjections from './Components/PartsOfSpeech/Interjection/Interjections';
 import VocabularyDisplay from './Components/Vocabulary/VocabularyDisplay';
 import QuestionDisplay from './Components/Question/QuestionDisplay';
-import LoginRegister from './Components/LoginRegister/LoginRegister';
+import Register from './Components/LoginRegister/Register';
+import login from './Components/LoginRegister/login';
 
 import SubjectDisplay from './Components/Question/SubjectDisplay'
 
@@ -84,7 +85,8 @@ function App() {
           <Route path="/Pun" exact component={Pun} />
 
           
-          <Route path="/LoginRegister" exact component={LoginRegister} />
+          <Route path="/Register" exact component={Register} />
+          <Route path="/login" exact component={login} />
 
           <Route path="/QuestionDisplay" exact component={QuestionDisplay} />
           <Route path="/SubjectDisplay" exact component={SubjectDisplay} />

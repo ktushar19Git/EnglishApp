@@ -6,6 +6,7 @@ import { BsEnvelope } from "react-icons/bs";
 import { ImSearch} from "react-icons/im";
 import Button from '@material-ui/core/Button';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import HowToRegIcon from '@material-ui/icons/HowToReg';
 import { useHistory } from "react-router-dom";
 import Grid from '@material-ui/core/Grid';
 import { ImNext } from 'react-icons/im';
@@ -44,8 +45,13 @@ export default function SearchBar() {
 
     async function onLoginPage() {
     
-        history.push("/LoginRegister");
+        history.push("/login");
       
+    }
+
+    async function onRegisterPage() {
+
+        history.push("/Register");
     }
 
     return (
@@ -53,7 +59,7 @@ export default function SearchBar() {
 
                 <div >
                         <Grid container>
-                            <Grid item xs={12} sm={10} >
+                            <Grid item xs={12} sm={8} >
                                 <div>
                                     <div>
                                     Call Us +91 9108705205 
@@ -62,6 +68,19 @@ export default function SearchBar() {
                                     
                                 </div>
                             </Grid>
+                            
+                            <Grid item xs={12} sm={2} >
+                                <div >
+                                <Button  id="regmenu-btn" 
+                                        style={{
+                                          color:'black',
+                                          fontWeight:'bold'
+                                        }} onClick={() => {
+                onRegisterPage();
+              }}><HowToRegIcon></HowToRegIcon>Register</Button>
+                                </div>
+                            </Grid>
+
                             <Grid item xs={12} sm={2} >
                                 <div >
                                 <Button  id="regmenu-btn" 
